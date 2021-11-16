@@ -1,0 +1,121 @@
+﻿<Window x:Class="CourseApp.AuthorizeWindows.Register.RegisterWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CourseApp.AuthorizeWindows.Register"
+        mc:Ignorable="d"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="RegisterWindow" Height="700" Width="800">
+
+    <Grid Background="Gray">
+        <Border MaxWidth="750"
+                Background="White"
+                Padding="30"
+                Margin="0 20">
+
+            <StackPanel>
+                <Grid>
+                    <TextBlock Text="Регистрация" FontSize="30" FontWeight="Bold" Margin="0 0 0 20"/>
+                    <Button MaxWidth="150" 
+                            HorizontalAlignment="right" 
+                            Content="Отмена"
+                            Click="Back"/>
+                </Grid>
+                <StackPanel>
+                    <TextBlock Text="Личные данные" HorizontalAlignment="Center" FontSize="20" FontWeight="Bold"/>
+                    
+                    <TextBox x:Name="TNumber"
+                             materialDesign:HintAssist.Hint="Введите номер телефона" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="0 10"
+                             ToolTip="+ХХХХХХХХХХХХ, например +375292812911">
+                        <TextBox.Text>
+                            <Binding Path="Number">
+                                <Binding.ValidationRules>
+                                    <DataErrorValidationRule/>
+                                </Binding.ValidationRules>
+                            </Binding>
+                        </TextBox.Text>
+                    </TextBox>
+
+                    <TextBox x:Name="TName" 
+                             materialDesign:HintAssist.Hint="Введите ФИО" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="0 10"
+                             ToolTip="Фамилия Имя Отчество, например Суховенко Эдуард Сергеевич">
+                        <TextBox.Text>
+                            <Binding Path="ClientName">
+                                <Binding.ValidationRules>
+                                    <DataErrorValidationRule/>
+                                </Binding.ValidationRules>
+                            </Binding>
+                        </TextBox.Text>                     
+                    </TextBox>
+
+                    <TextBox x:Name="TAdress" 
+                             materialDesign:HintAssist.Hint="Введите адрес" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="0 10 0 40"
+                             ToolTip="Адрес в любом удобном для вас формате, например ул. Солнечная д. 1, кв. 26">
+                        <TextBox.Text>
+                            <Binding Path="Adress">
+                                <Binding.ValidationRules>
+                                    <DataErrorValidationRule/>
+                                </Binding.ValidationRules>
+                            </Binding>
+                        </TextBox.Text>
+                    </TextBox>
+
+                    
+                    
+                    <TextBlock Text="Данные аккаунта" HorizontalAlignment="Center" FontSize="20" FontWeight="Bold"/>
+
+                    <TextBox x:Name="TLogin" 
+                             materialDesign:HintAssist.Hint="Введите логин" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="0 -10 0 10">
+                        <TextBox.Text>
+                            <Binding Path="Login">
+                                <Binding.ValidationRules>
+                                    <DataErrorValidationRule/>
+                                </Binding.ValidationRules>
+                            </Binding>
+                        </TextBox.Text>
+                    </TextBox>
+                    
+                    <TextBox x:Name="TPassword1" 
+                             materialDesign:HintAssist.Hint="Введите пароль" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="0 10">
+                        <TextBox.Text>
+                            <Binding Path="Password1">
+                                <Binding.ValidationRules>
+                                    <DataErrorValidationRule/>
+                                </Binding.ValidationRules>
+                            </Binding>
+                        </TextBox.Text>
+                    </TextBox>
+
+                    <TextBox x:Name="TPassword2" 
+                             materialDesign:HintAssist.Hint="Подтвердите пароль" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="0 10">
+                        <TextBox.Text>
+                            <Binding Path="Password2">
+                                <Binding.ValidationRules>
+                                    <DataErrorValidationRule/>
+                                </Binding.ValidationRules>
+                            </Binding>
+                        </TextBox.Text>
+                    </TextBox>
+
+
+                    <Button Margin="0 65 0 0" 
+                            Click="Register"
+                            x:Name="RegisterButton"
+                            Content="Зарегистрироваться"
+                            MouseLeave="PopUpLeave">
+                    </Button>
+                    <Popup  x:Name="RegPopUp"
+                            Placement="Mouse"
+                            StaysOpen="True">
+                        <TextBlock Background="LightPink"
+                                   x:Name="RegPopUpText"
+                                   Visibility="Hidden"
+                                   Text="Необходимо заполнить все поля."/>
+                    </Popup>
+                    
+                </StackPanel>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>
