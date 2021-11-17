@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataroot xmlns:od="urn:schemas-microsoft-com:officedata" generated="2021-11-17T11:47:59">
+<DType>
+<DTypeId>1</DTypeId>
+<Title>Личного страхования</Title>
+</DType>
+<DType>
+<DTypeId>2</DTypeId>
+<Title>Имущественного страхования</Title>
+</DType>
+<DType>
+<DTypeId>3</DTypeId>
+<Title>Страхование жизни</Title>
+</DType>
+<DType>
+<DTypeId>4</DTypeId>
+<Title>Страхование ответственности</Title>
+</DType>
+<DType>
+<DTypeId>5</DTypeId>
+<Title>Страхование автомобилей</Title>
+</DType>
+</dataroot>

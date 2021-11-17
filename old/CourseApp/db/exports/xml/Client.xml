@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataroot xmlns:od="urn:schemas-microsoft-com:officedata" generated="2021-11-17T11:47:31">
+<Client>
+<ClientId>1</ClientId>
+<PhoneNumber>+375296400084</PhoneNumber>
+<FullName>Савин Даниил Васильевич</FullName>
+<Adress>Жукова улица</Adress>
+<UserId>11</UserId>
+</Client>
+<Client>
+<ClientId>2</ClientId>
+<PhoneNumber>+375298989833</PhoneNumber>
+<FullName>Моисеев Григорий Еремеевич</FullName>
+<Adress>Давыдовская улица</Adress>
+<UserId>10</UserId>
+</Client>
+<Client>
+<ClientId>3</ClientId>
+<PhoneNumber>+375296375792</PhoneNumber>
+<FullName>Куликов Зиновий Филатович</FullName>
+<Adress>Дальняя улица</Adress>
+<UserId>16</UserId>
+</Client>
+<Client>
+<ClientId>4</ClientId>
+<PhoneNumber>+375298596602</PhoneNumber>
+<FullName>Мухин Гурий Яковович</FullName>
+<Adress>Дворникова улица</Adress>
+<UserId>2</UserId>
+</Client>
+<Client>
+<ClientId>5</ClientId>
+<PhoneNumber>+375295235085</PhoneNumber>
+<FullName>Куликов Агафон Николаевич</FullName>
+<Adress>Джураева улица</Adress>
+<UserId>20</UserId>
+</Client>
+<Client>
+<ClientId>6</ClientId>
+<PhoneNumber>+375297395736</PhoneNumber>
+<FullName>Родионова Ванесса Максовна</FullName>
+<Adress>Дзержинского улица</Adress>
+<UserId>8</UserId>
+</Client>
+<Client>
+<ClientId>7</ClientId>
+<PhoneNumber>+375296394317</PhoneNumber>
+<FullName>Евсеева Виктория Филатовна</FullName>
+<Adress>Димитрова улица</Adress>
+<UserId>12</UserId>
+</Client>
+<Client>
+<ClientId>8</ClientId>
+<PhoneNumber>+375297673606</PhoneNumber>
+<FullName>Шестакова Глория Евсеевна</FullName>
+<Adress>Днепропетровский переулок</Adress>
+<UserId>3</UserId>
+</Client>
+<Client>
+<ClientId>9</ClientId>
+<PhoneNumber>+375292073833</PhoneNumber>
+<FullName>Савельева Илона Георгиевна</FullName>
+<Adress>Докутович улица</Adress>
+<UserId>5</UserId>
+</Client>
+<Client>
+<ClientId>10</ClientId>
+<PhoneNumber>+375297214577</PhoneNumber>
+<FullName>Фомичёва Яна Юлиановна</FullName>
+<Adress>Дорожная улица</Adress>
+<UserId>19</UserId>
+</Client>
+</dataroot>

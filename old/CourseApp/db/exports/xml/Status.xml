@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataroot xmlns:od="urn:schemas-microsoft-com:officedata" generated="2021-11-17T11:49:05">
+<Status>
+<StatusId>1</StatusId>
+<Title>Подтверждён</Title>
+</Status>
+<Status>
+<StatusId>2</StatusId>
+<Title>В обработке</Title>
+</Status>
+<Status>
+<StatusId>3</StatusId>
+<Title>Отклонён</Title>
+</Status>
+</dataroot>

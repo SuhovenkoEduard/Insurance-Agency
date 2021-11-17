@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataroot xmlns:od="urn:schemas-microsoft-com:officedata" generated="2021-11-17T11:48:52">
+<Service>
+<ServiceId>11</ServiceId>
+<Title>Здоровье (НС, ДМС, клещ)</Title>
+<DTypeId>3</DTypeId>
+<Cost>110</Cost>
+</Service>
+<Service>
+<ServiceId>12</ServiceId>
+<Title>Имущество</Title>
+<DTypeId>2</DTypeId>
+<Cost>213</Cost>
+</Service>
+<Service>
+<ServiceId>13</ServiceId>
+<Title>КАСКО</Title>
+<DTypeId>5</DTypeId>
+<Cost>415</Cost>
+</Service>
+<Service>
+<ServiceId>14</ServiceId>
+<Title>Путешествия</Title>
+<DTypeId>1</DTypeId>
+<Cost>842</Cost>
+</Service>
+<Service>
+<ServiceId>1</ServiceId>
+<Title>Ипотечное страхование</Title>
+<DTypeId>4</DTypeId>
+<Cost>299</Cost>
+</Service>
+<Service>
+<ServiceId>2</ServiceId>
+<Title>ОСАГО</Title>
+<DTypeId>5</DTypeId>
+<Cost>100</Cost>
+</Service>
+<Service>
+<ServiceId>3</ServiceId>
+<Title>Гринкарта</Title>
+<DTypeId>1</DTypeId>
+<Cost>300</Cost>
+</Service>
+</dataroot>

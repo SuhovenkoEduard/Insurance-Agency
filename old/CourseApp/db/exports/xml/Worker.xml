@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataroot xmlns:od="urn:schemas-microsoft-com:officedata" generated="2021-11-17T11:49:21">
+<Worker>
+<WorkerId>106</WorkerId>
+<FullName>Родионова Кира Феликсовна</FullName>
+<MinSalary>710</MinSalary>
+<UserId>40</UserId>
+<DepartamentId>7</DepartamentId>
+</Worker>
+<Worker>
+<WorkerId>107</WorkerId>
+<FullName>Полякова Юнона Авдеевна</FullName>
+<MinSalary>80</MinSalary>
+<UserId>41</UserId>
+<DepartamentId>7</DepartamentId>
+</Worker>
+<Worker>
+<WorkerId>108</WorkerId>
+<FullName>Хохлова Герда Онисимовна</FullName>
+<MinSalary>210</MinSalary>
+<UserId>42</UserId>
+<DepartamentId>8</DepartamentId>
+</Worker>
+<Worker>
+<WorkerId>109</WorkerId>
+<FullName>Шилова Олеся Якуновна</FullName>
+<MinSalary>205</MinSalary>
+<UserId>43</UserId>
+<DepartamentId>8</DepartamentId>
+</Worker>
+<Worker>
+<WorkerId>110</WorkerId>
+<FullName>Анисимов Павел Яковлевич</FullName>
+<MinSalary>550</MinSalary>
+<UserId>44</UserId>
+<DepartamentId>9</DepartamentId>
+</Worker>
+<Worker>
+<WorkerId>111</WorkerId>
+<FullName>Носков Вадим Анатольевич</FullName>
+<MinSalary>640</MinSalary>
+<UserId>45</UserId>
+<DepartamentId>9</DepartamentId>
+</Worker>
+<Worker>
+<WorkerId>112</WorkerId>
+<FullName>Ермаков Бенедикт Петрович</FullName>
+<MinSalary>720</MinSalary>
+<UserId>46</UserId>
+<DepartamentId>10</DepartamentId>
+</Worker>
+<Worker>
+<WorkerId>113</WorkerId>
+<FullName>Сысоев Арсений Всеволодович</FullName>
+<MinSalary>330</MinSalary>
+<UserId>47</UserId>
+<DepartamentId>10</DepartamentId>
+</Worker>
+<Worker>
+<WorkerId>114</WorkerId>
+<FullName>Игнатьев Вячеслав Дмитриевич</FullName>
+<MinSalary>314</MinSalary>
+<UserId>48</UserId>
+<DepartamentId>2</DepartamentId>
+</Worker>
+<Worker>
+<WorkerId>83</WorkerId>
+<FullName>Артемьев Вольдемар Федотович</FullName>
+<MinSalary>100</MinSalary>
+<UserId>14</UserId>
+<DepartamentId>1</DepartamentId>
+</Worker>
+<Worker>
+<WorkerId>84</WorkerId>
+<FullName>Фёдоров Артем Якунович</FullName>
+<MinSalary>200</MinSalary>
+<UserId>6</UserId>
+<DepartamentId>1</DepartamentId>
+</Worker>
+<Worker>
+<WorkerId>85</WorkerId>
+<FullName>Агафонов Исаак Лаврентьевич</FullName>
+<MinSalary>300</MinSalary>
+<UserId>17</UserId>
+<DepartamentId>2</DepartamentId>
+</Worker>
+<Worker>
+<WorkerId>86</WorkerId>
+<FullName>Князев Корнелий Богданович</FullName>
+<MinSalary>100</MinSalary>
+<UserId>1</UserId>
+<DepartamentId>2</DepartamentId>
+</Worker>
+<Worker>
+<WorkerId>87</WorkerId>
+<FullName>Хохлов Борис Авдеевич</FullName>
+<MinSalary>200</MinSalary>
+<UserId>7</UserId>
+<DepartamentId>3</DepartamentId>
+</Worker>
+<Worker>
+<WorkerId>88</WorkerId>
+<FullName>Денисов Болеслав Тарасович</FullName>
+<MinSalary>1100</MinSalary>
+<UserId>9</UserId>
+<DepartamentId>3</DepartamentId>
+</Worker>
+<Worker>
+<WorkerId>89</WorkerId>
+<FullName>Самойлов Мечислав Иванович</FullName>
+<MinSalary>115</MinSalary>
+<UserId>15</UserId>
+<DepartamentId>4</DepartamentId>
+</Worker>
+<Worker>
+<WorkerId>90</WorkerId>
+<FullName>Кулагин Пантелей Вениаминович</FullName>
+<MinSalary>235</MinSalary>
+<UserId>4</UserId>
+<DepartamentId>4</DepartamentId>
+</Worker>
+<Worker>
+<WorkerId>91</WorkerId>
+<FullName>Елисеев Арсений Артёмович</FullName>
+<MinSalary>200</MinSalary>
+<UserId>18</UserId>
+<DepartamentId>6</DepartamentId>
+</Worker>
+<Worker>
+<WorkerId>92</WorkerId>
+<FullName>Пономарёв Климент Феликсович</FullName>
+<MinSalary>540</MinSalary>
+<UserId>13</UserId>
+<DepartamentId>6</DepartamentId>
+</Worker>
+</dataroot>

@@ -52,7 +52,7 @@ namespace CourseApp.Accounts.AgentWindow
         private void ConfirmedContracts(object sender, RoutedEventArgs e)
         {
             HideSaveButton();
-            DataGrid.ItemsSource = dataLayer.Contracts.GetFullInfoByAgentId(agent.AgentId);
+            DataGrid.ItemsSource = dataLayer.Contracts.GetConfirmedContractsByAgentId(agent.AgentId);
         }
         // 4
         private void SalaryForTheLastYear(object sender, RoutedEventArgs e)

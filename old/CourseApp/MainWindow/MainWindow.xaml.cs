@@ -27,7 +27,6 @@ namespace CourseApp
     /// </summary>
     public partial class MainWindow : Window
     {
-        protected AccessDB access;
         protected IAdapter adapter;
         protected DataLayer.DataLayer dataLayer;
 
@@ -35,21 +34,30 @@ namespace CourseApp
         {
             InitializeComponent();
 
-            AccessDB access = new AccessDB(ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString);
-            adapter = new AccessAdapter(access);
-            dataLayer = new DataLayer.DataLayer(adapter);
-
+            bool isMongo = true;
+            if (isMongo)
+            {
+                DataLayer.MongoDB mongo = new DataLayer.MongoDB(ConfigurationManager.ConnectionStrings["MongoDB"].ConnectionString);
+                IAdapter adapter = new MongoAdapter(mongo);
+                dataLayer = new DataLayer.DataLayer(adapter);
+            } else
+            {
+                AccessDB access = new AccessDB(ConfigurationManager.ConnectionStrings["Access"].ConnectionString);
+                adapter = new AccessAdapter(access);
+                dataLayer = new DataLayer.DataLayer(adapter);
+            }
+            
             var signInWindow = new SignInWindow(dataLayer);
             signInWindow.Show();
 
             //User userClient = new User("web", "qwerty");
             //signInWindow.SignIn(userClient);
 
-            //User userAgent = new User("manager", "123456");
+            //User userAgent = new User("local", "princess");
             //signInWindow.SignIn(userAgent);
 
-            //User userManager = new User("admin", "admin");
-            //signInWindow.SignIn(userManager);
+            User userManager = new User("admin", "admin");
+            signInWindow.SignIn(userManager);
 
             //signInWindow.Close();
             this.Close();

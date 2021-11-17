@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataroot xmlns:od="urn:schemas-microsoft-com:officedata" generated="2021-11-17T11:48:43">
+<Manager>
+<ManagerId>2</ManagerId>
+<WorkerId>90</WorkerId>
+<PersonalData>Грандмастер</PersonalData>
+</Manager>
+<Manager>
+<ManagerId>4</ManagerId>
+<WorkerId>91</WorkerId>
+<PersonalData>Стажёр</PersonalData>
+</Manager>
+<Manager>
+<ManagerId>5</ManagerId>
+<WorkerId>92</WorkerId>
+<PersonalData>Профессионал</PersonalData>
+</Manager>
+<Manager>
+<ManagerId>7</ManagerId>
+<WorkerId>114</WorkerId>
+<PersonalData>Легенда</PersonalData>
+</Manager>
+</dataroot>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataroot xmlns:od="urn:schemas-microsoft-com:officedata" generated="2021-11-17T11:48:34">
+<Filial>
+<FilialId>3</FilialId>
+<NumberOfWorkers>171</NumberOfWorkers>
+<City>Минск</City>
+<DateOfCreation>11:08:2016</DateOfCreation>
+</Filial>
+<Filial>
+<FilialId>4</FilialId>
+<NumberOfWorkers>222</NumberOfWorkers>
+<City>Гомель</City>
+<DateOfCreation>12:03:2019</DateOfCreation>
+</Filial>
+</dataroot>
