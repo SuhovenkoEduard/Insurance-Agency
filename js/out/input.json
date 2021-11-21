@@ -1,0 +1,914 @@
+[
+  {
+    "collectionName": "Agent",
+    "data": [
+      {
+        "_id": "6194c28b4c4aeeed15b43254",
+        "AgentId": 8,
+        "WorkerId": 83,
+        "PersonalData": "новичок"
+      },
+      {
+        "_id": "6194c28b4c4aeeed15b4325b",
+        "AgentId": 22,
+        "WorkerId": 109,
+        "PersonalData": "новичок"
+      },
+      {
+        "_id": "6194c28b4c4aeeed15b43252",
+        "AgentId": 4,
+        "WorkerId": 85,
+        "PersonalData": "профи"
+      },
+      {
+        "_id": "6194c28b4c4aeeed15b43255",
+        "AgentId": 9,
+        "WorkerId": 86,
+        "PersonalData": "новичок"
+      },
+      {
+        "_id": "6194c28b4c4aeeed15b4325c",
+        "AgentId": 23,
+        "WorkerId": 110,
+        "PersonalData": "новичок"
+      },
+      {
+        "_id": "6194c28b4c4aeeed15b4325f",
+        "AgentId": 26,
+        "WorkerId": 113,
+        "PersonalData": "новичок"
+      },
+      {
+        "_id": "6194c28b4c4aeeed15b43253",
+        "AgentId": 5,
+        "WorkerId": 84,
+        "PersonalData": "мастер"
+      },
+      {
+        "_id": "6194c28b4c4aeeed15b43258",
+        "AgentId": 19,
+        "WorkerId": 106,
+        "PersonalData": "альфасамец"
+      },
+      {
+        "_id": "6194c28b4c4aeeed15b43251",
+        "AgentId": 3,
+        "WorkerId": 87,
+        "PersonalData": "альфасамец"
+      },
+      {
+        "_id": "6194c28b4c4aeeed15b43256",
+        "AgentId": 10,
+        "WorkerId": 88,
+        "PersonalData": "новичок"
+      },
+      {
+        "_id": "6194c28b4c4aeeed15b4325d",
+        "AgentId": 24,
+        "WorkerId": 111,
+        "PersonalData": "новичок"
+      },
+      {
+        "_id": "6194c28b4c4aeeed15b43257",
+        "AgentId": 11,
+        "WorkerId": 89,
+        "PersonalData": "мастер"
+      },
+      {
+        "_id": "6194c28b4c4aeeed15b4325e",
+        "AgentId": 25,
+        "WorkerId": 112,
+        "PersonalData": "новичок"
+      },
+      {
+        "_id": "6194c28b4c4aeeed15b4325a",
+        "AgentId": 21,
+        "WorkerId": 108,
+        "PersonalData": "мастер"
+      },
+      {
+        "_id": "6194c28b4c4aeeed15b43259",
+        "AgentId": 20,
+        "WorkerId": 107,
+        "PersonalData": "профи"
+      }
+    ]
+  },
+  {
+    "collectionName": "Client",
+    "data": [
+      {
+        "_id": "6194c2fa4c4aeeed15b4b467",
+        "ClientId": 6,
+        "PhoneNumber": "375297395736",
+        "FullName": "Родионова Ванесса Максовна",
+        "Adress": "Дзержинского улица",
+        "UserId": 8
+      },
+      {
+        "_id": "6194c2fa4c4aeeed15b4b463",
+        "ClientId": 2,
+        "PhoneNumber": "375298989833",
+        "FullName": "Моисеев Григорий Еремеевич",
+        "Adress": "Давыдовская улица",
+        "UserId": 10
+      },
+      {
+        "_id": "6194c2fa4c4aeeed15b4b465",
+        "ClientId": 4,
+        "PhoneNumber": "375298596602",
+        "FullName": "Мухин Гурий Яковович",
+        "Adress": "Дворникова улица",
+        "UserId": 2
+      },
+      {
+        "_id": "6194c2fa4c4aeeed15b4b469",
+        "ClientId": 8,
+        "PhoneNumber": "375629872340",
+        "FullName": "Шестакова Глория Евсеевна",
+        "Adress": "Днепропетровский переулок",
+        "UserId": 3
+      },
+      {
+        "_id": "6194c2fa4c4aeeed15b4b464",
+        "ClientId": 3,
+        "PhoneNumber": "375296375792",
+        "FullName": "Куликов Зиновий Филатович",
+        "Adress": "Дальняя улица",
+        "UserId": 16
+      },
+      {
+        "_id": "6194c2fa4c4aeeed15b4b46b",
+        "ClientId": 10,
+        "PhoneNumber": "375297214577",
+        "FullName": "Фомичёва Яна Юлиановна",
+        "Adress": "Дорожная улица",
+        "UserId": 19
+      },
+      {
+        "_id": "6194c2fa4c4aeeed15b4b462",
+        "ClientId": 1,
+        "PhoneNumber": "375296400084",
+        "FullName": "Савин Даниил Васильевич",
+        "Adress": "Жукова улица",
+        "UserId": 11
+      },
+      {
+        "_id": "6194c2fa4c4aeeed15b4b466",
+        "ClientId": 5,
+        "PhoneNumber": "375295235085",
+        "FullName": "Куликов Агафон Николаевич",
+        "Adress": "Джураева улица",
+        "UserId": 20
+      },
+      {
+        "_id": "6194c2fa4c4aeeed15b4b468",
+        "ClientId": 7,
+        "PhoneNumber": "375296394317",
+        "FullName": "Евсеева Виктория Филатовна",
+        "Adress": "Димитрова улица",
+        "UserId": 12
+      },
+      {
+        "_id": "6194c2fa4c4aeeed15b4b46a",
+        "ClientId": 9,
+        "PhoneNumber": "375292073833",
+        "FullName": "Савельева Илона Георгиевна",
+        "Adress": "Докутович улица",
+        "UserId": 5
+      }
+    ]
+  },
+  {
+    "collectionName": "Contract",
+    "data": [
+      {
+        "_id": "6194c33a4c4aeeed15b50e2f",
+        "ContractId": 49,
+        "DateOfConclusion": "09:10:2001",
+        "ServiceId": 1,
+        "ClientId": 2,
+        "AgentId": 4,
+        "Cost": 230,
+        "InsurancePeriod": 2,
+        "Comment": "-",
+        "StatusId": 1
+      },
+      {
+        "_id": "6194c33a4c4aeeed15b50e27",
+        "ContractId": 41,
+        "DateOfConclusion": "27:08:2005",
+        "ServiceId": 3,
+        "ClientId": 9,
+        "AgentId": 4,
+        "Cost": 100,
+        "InsurancePeriod": 5,
+        "Comment": "-",
+        "StatusId": 1
+      },
+      {
+        "_id": "6194c33a4c4aeeed15b50e29",
+        "ContractId": 43,
+        "DateOfConclusion": "01:08:2017",
+        "ServiceId": 2,
+        "ClientId": 4,
+        "AgentId": 3,
+        "Cost": 400,
+        "InsurancePeriod": 3,
+        "Comment": "-",
+        "StatusId": 3
+      },
+      {
+        "_id": "6194c33a4c4aeeed15b50e30",
+        "ContractId": 50,
+        "DateOfConclusion": "04:09:2015",
+        "ServiceId": 3,
+        "ClientId": 8,
+        "AgentId": 3,
+        "Cost": 580,
+        "InsurancePeriod": 4,
+        "Comment": "-",
+        "StatusId": 1
+      },
+      {
+        "_id": "6194c33a4c4aeeed15b50e2b",
+        "ContractId": 45,
+        "DateOfConclusion": "21:10:2007",
+        "ServiceId": 2,
+        "ClientId": 2,
+        "AgentId": 3,
+        "Cost": 750,
+        "InsurancePeriod": 2,
+        "Comment": "-",
+        "StatusId": 2
+      },
+      {
+        "_id": "6194c33a4c4aeeed15b50e26",
+        "ContractId": 61,
+        "DateOfConclusion": "28:10:2008",
+        "ServiceId": 12,
+        "ClientId": 5,
+        "AgentId": 9,
+        "Cost": 426,
+        "InsurancePeriod": 2,
+        "Comment": "-",
+        "StatusId": 2
+      },
+      {
+        "_id": "6194c33a4c4aeeed15b50e23",
+        "ContractId": 58,
+        "DateOfConclusion": "15:10:2020",
+        "ServiceId": 11,
+        "ClientId": 5,
+        "AgentId": 3,
+        "Cost": 550,
+        "InsurancePeriod": 5,
+        "Comment": "-",
+        "StatusId": 2
+      },
+      {
+        "_id": "6194c33a4c4aeeed15b50e24",
+        "ContractId": 59,
+        "DateOfConclusion": "24:05:2012",
+        "ServiceId": 12,
+        "ClientId": 5,
+        "AgentId": 22,
+        "Cost": 213,
+        "InsurancePeriod": 1,
+        "Comment": "Бог есть.",
+        "StatusId": 2
+      },
+      {
+        "_id": "6194c33a4c4aeeed15b50e2d",
+        "ContractId": 47,
+        "DateOfConclusion": "29:05:2009",
+        "ServiceId": 3,
+        "ClientId": 9,
+        "AgentId": 9,
+        "Cost": 100,
+        "InsurancePeriod": 5,
+        "Comment": "-",
+        "StatusId": 1
+      },
+      {
+        "_id": "6194c33a4c4aeeed15b50e2a",
+        "ContractId": 44,
+        "DateOfConclusion": "27:06:2008",
+        "ServiceId": 2,
+        "ClientId": 2,
+        "AgentId": 11,
+        "Cost": 250,
+        "InsurancePeriod": 5,
+        "Comment": "-",
+        "StatusId": 1
+      },
+      {
+        "_id": "6194c33a4c4aeeed15b50e2c",
+        "ContractId": 46,
+        "DateOfConclusion": "02:08:2018",
+        "ServiceId": 3,
+        "ClientId": 8,
+        "AgentId": 10,
+        "Cost": 200,
+        "InsurancePeriod": 5,
+        "Comment": "-",
+        "StatusId": 1
+      },
+      {
+        "_id": "6194c33a4c4aeeed15b50e28",
+        "ContractId": 42,
+        "DateOfConclusion": "07:03:2003",
+        "ServiceId": 2,
+        "ClientId": 7,
+        "AgentId": 9,
+        "Cost": 300,
+        "InsurancePeriod": 2,
+        "Comment": "-",
+        "StatusId": 1
+      },
+      {
+        "_id": "6194c33a4c4aeeed15b50e2e",
+        "ContractId": 48,
+        "DateOfConclusion": "17:02:2006",
+        "ServiceId": 1,
+        "ClientId": 9,
+        "AgentId": 8,
+        "Cost": 110,
+        "InsurancePeriod": 1,
+        "Comment": "-",
+        "StatusId": 2
+      },
+      {
+        "_id": "6194dbed4c4aeeed15d2e831",
+        "ContractId": 62,
+        "DateOfConclusion": "28:06:2005",
+        "ServiceId": 14,
+        "ClientId": 5,
+        "AgentId": 5,
+        "Cost": 1684,
+        "InsurancePeriod": 2,
+        "Comment": "-",
+        "StatusId": 1
+      },
+      {
+        "_id": "6194dca64c4aeeed15d3ca3e",
+        "ContractId": 63,
+        "DateOfConclusion": "01:08:2018",
+        "ServiceId": 3,
+        "ClientId": 5,
+        "AgentId": 5,
+        "Cost": 900,
+        "InsurancePeriod": 3,
+        "Comment": "213214",
+        "StatusId": 1
+      }
+    ]
+  },
+  {
+    "collectionName": "DType",
+    "data": [
+      {
+        "_id": "6194c39a4c4aeeed15b5852c",
+        "DTypeId": 3,
+        "Title": "Страхование жизни"
+      },
+      {
+        "_id": "6194c39a4c4aeeed15b5852d",
+        "DTypeId": 4,
+        "Title": "Страхование ответственности"
+      },
+      {
+        "_id": "6194c39a4c4aeeed15b5852a",
+        "DTypeId": 1,
+        "Title": "Личного страхования"
+      },
+      {
+        "_id": "6194c39a4c4aeeed15b5852b",
+        "DTypeId": 2,
+        "Title": "Имущественного страхования"
+      },
+      {
+        "_id": "6194c39a4c4aeeed15b5852e",
+        "DTypeId": 5,
+        "Title": "Страхование автомобилей"
+      }
+    ]
+  },
+  {
+    "collectionName": "Departament",
+    "data": [
+      {
+        "_id": "6194c3664c4aeeed15b5494c",
+        "DepartamentId": 8,
+        "DTypeID": 2,
+        "FilialId": 4
+      },
+      {
+        "_id": "6194c3664c4aeeed15b54951",
+        "DepartamentId": 4,
+        "DTypeID": 4,
+        "FilialId": 3
+      },
+      {
+        "_id": "6194c3664c4aeeed15b5494f",
+        "DepartamentId": 3,
+        "DTypeID": 3,
+        "FilialId": 3
+      },
+      {
+        "_id": "6194c3664c4aeeed15b5494b",
+        "DepartamentId": 1,
+        "DTypeID": 1,
+        "FilialId": 3
+      },
+      {
+        "_id": "6194c3664c4aeeed15b5494d",
+        "DepartamentId": 2,
+        "DTypeID": 2,
+        "FilialId": 3
+      },
+      {
+        "_id": "6194c3664c4aeeed15b5494e",
+        "DepartamentId": 9,
+        "DTypeID": 3,
+        "FilialId": 4
+      },
+      {
+        "_id": "6194c3664c4aeeed15b5494a",
+        "DepartamentId": 7,
+        "DTypeID": 1,
+        "FilialId": 4
+      },
+      {
+        "_id": "6194c3664c4aeeed15b54952",
+        "DepartamentId": 6,
+        "DTypeID": 5,
+        "FilialId": 3
+      },
+      {
+        "_id": "6194c3664c4aeeed15b54950",
+        "DepartamentId": 10,
+        "DTypeID": 4,
+        "FilialId": 4
+      }
+    ]
+  },
+  {
+    "collectionName": "Filial",
+    "data": [
+      {
+        "_id": "6194c3ca4c4aeeed15b5ba2a",
+        "FilialId": 3,
+        "NumberOfWorkers": 171,
+        "City": "Минск",
+        "DateOfCreation": "11:08:2016"
+      },
+      {
+        "_id": "6194c3ca4c4aeeed15b5ba2b",
+        "FilialId": 4,
+        "NumberOfWorkers": 222,
+        "City": "Гомель",
+        "DateOfCreation": "12:03:2019"
+      }
+    ]
+  },
+  {
+    "collectionName": "Manager",
+    "data": [
+      {
+        "_id": "6194c4344c4aeeed15b63482",
+        "ManagerId": 4,
+        "WorkerId": 91,
+        "PersonalData": "Стажёр"
+      },
+      {
+        "_id": "6194c4344c4aeeed15b63483",
+        "ManagerId": 5,
+        "WorkerId": 92,
+        "PersonalData": "Профессионал"
+      },
+      {
+        "_id": "6194c4344c4aeeed15b63481",
+        "ManagerId": 2,
+        "WorkerId": 90,
+        "PersonalData": "Грандмастер"
+      },
+      {
+        "_id": "6194c4344c4aeeed15b63484",
+        "ManagerId": 7,
+        "WorkerId": 114,
+        "PersonalData": "Легенда"
+      }
+    ]
+  },
+  {
+    "collectionName": "Service",
+    "data": [
+      {
+        "_id": "6194c4634c4aeeed15b6696c",
+        "ServiceId": 2,
+        "Title": "ОСАГО",
+        "DTypeId": 5,
+        "Cost": 100
+      },
+      {
+        "_id": "6194c4634c4aeeed15b66967",
+        "ServiceId": 11,
+        "Title": "Здоровье (НС, ДМС, клещ)",
+        "DTypeId": 3,
+        "Cost": 110
+      },
+      {
+        "_id": "6194c4634c4aeeed15b6696d",
+        "ServiceId": 3,
+        "Title": "Гринкарта",
+        "DTypeId": 1,
+        "Cost": 300
+      },
+      {
+        "_id": "6194c4634c4aeeed15b6696b",
+        "ServiceId": 1,
+        "Title": "Ипотечное страхование",
+        "DTypeId": 4,
+        "Cost": 299
+      },
+      {
+        "_id": "6194c4634c4aeeed15b66969",
+        "ServiceId": 13,
+        "Title": "КАСКО",
+        "DTypeId": 5,
+        "Cost": 415
+      },
+      {
+        "_id": "6194c4634c4aeeed15b66968",
+        "ServiceId": 12,
+        "Title": "Имущество",
+        "DTypeId": 2,
+        "Cost": 213
+      },
+      {
+        "_id": "6194c4634c4aeeed15b6696a",
+        "ServiceId": 14,
+        "Title": "Путешествия",
+        "DTypeId": 1,
+        "Cost": 842
+      }
+    ]
+  },
+  {
+    "collectionName": "Status",
+    "data": [
+      {
+        "_id": "6194c4884c4aeeed15b6a00d",
+        "StatusId": 2,
+        "Title": "В обработке"
+      },
+      {
+        "_id": "6194c4884c4aeeed15b6a00c",
+        "StatusId": 1,
+        "Title": "Подтверждён"
+      },
+      {
+        "_id": "6194c4884c4aeeed15b6a00e",
+        "StatusId": 3,
+        "Title": "Отклонён"
+      }
+    ]
+  },
+  {
+    "collectionName": "User",
+    "data": [
+      {
+        "_id": "6194c4b74c4aeeed15b6d724",
+        "UserId": 5,
+        "Login": "info",
+        "Password": "iloveyou"
+      },
+      {
+        "_id": "6194c4b74c4aeeed15b6d720",
+        "UserId": 1,
+        "Login": "manager",
+        "Password": "123456"
+      },
+      {
+        "_id": "6194c4b74c4aeeed15b6d725",
+        "UserId": 6,
+        "Login": "local",
+        "Password": "princess"
+      },
+      {
+        "_id": "6194c4b74c4aeeed15b6d73a",
+        "UserId": 46,
+        "Login": "czontnr",
+        "Password": "ab3rRY"
+      },
+      {
+        "_id": "6194c4b74c4aeeed15b6d730",
+        "UserId": 17,
+        "Login": "sales",
+        "Password": "654321"
+      },
+      {
+        "_id": "6194c4b74c4aeeed15b6d735",
+        "UserId": 41,
+        "Login": "qvtmxbq",
+        "Password": "jQ5g2x"
+      },
+      {
+        "_id": "6194c4b74c4aeeed15b6d723",
+        "UserId": 4,
+        "Login": "tech",
+        "Password": "password"
+      },
+      {
+        "_id": "6194c4b74c4aeeed15b6d72d",
+        "UserId": 14,
+        "Login": "user2",
+        "Password": "monkey"
+      },
+      {
+        "_id": "6194c4b74c4aeeed15b6d732",
+        "UserId": 19,
+        "Login": "pos1",
+        "Password": "ashley"
+      },
+      {
+        "_id": "6194c4b74c4aeeed15b6d72f",
+        "UserId": 16,
+        "Login": "besadmin",
+        "Password": "jessica"
+      },
+      {
+        "_id": "6194c4b74c4aeeed15b6d72c",
+        "UserId": 13,
+        "Login": "root",
+        "Password": "babygirl"
+      },
+      {
+        "_id": "6194c4b74c4aeeed15b6d737",
+        "UserId": 43,
+        "Login": "jrhijqv",
+        "Password": "2Hj3o3"
+      },
+      {
+        "_id": "6194c4b74c4aeeed15b6d721",
+        "UserId": 2,
+        "Login": "letmein",
+        "Password": "12345"
+      },
+      {
+        "_id": "6194c4b74c4aeeed15b6d738",
+        "UserId": 44,
+        "Login": "rovjqdu",
+        "Password": "5VZPEJ"
+      },
+      {
+        "_id": "6194c4b74c4aeeed15b6d72a",
+        "UserId": 11,
+        "Login": "changeme",
+        "Password": "nicole"
+      },
+      {
+        "_id": "6194c4b74c4aeeed15b6d734",
+        "UserId": 40,
+        "Login": "odftvlu",
+        "Password": "ZXYgoH"
+      },
+      {
+        "_id": "6194c4b74c4aeeed15b6d739",
+        "UserId": 45,
+        "Login": "spskdex",
+        "Password": "Tf8xqn"
+      },
+      {
+        "_id": "6194c4b74c4aeeed15b6d73b",
+        "UserId": 47,
+        "Login": "olinlxs",
+        "Password": "ig5JSd"
+      },
+      {
+        "_id": "6194c4b74c4aeeed15b6d722",
+        "UserId": 3,
+        "Login": "qwerty",
+        "Password": "123456789"
+      },
+      {
+        "_id": "6194c4b74c4aeeed15b6d726",
+        "UserId": 7,
+        "Login": "system",
+        "Password": "1234567"
+      },
+      {
+        "_id": "6194c4b74c4aeeed15b6d727",
+        "UserId": 8,
+        "Login": "pa$$word",
+        "Password": "rockyou"
+      },
+      {
+        "_id": "6194c4b74c4aeeed15b6d71f",
+        "UserId": 48,
+        "Login": "admin",
+        "Password": "admin"
+      },
+      {
+        "_id": "6194c4b74c4aeeed15b6d728",
+        "UserId": 9,
+        "Login": "access",
+        "Password": "12345678"
+      },
+      {
+        "_id": "6194c4b74c4aeeed15b6d729",
+        "UserId": 10,
+        "Login": "success",
+        "Password": "abc123"
+      },
+      {
+        "_id": "6194c4b74c4aeeed15b6d72b",
+        "UserId": 12,
+        "Login": "master",
+        "Password": "daniel"
+      },
+      {
+        "_id": "6194c4b74c4aeeed15b6d72e",
+        "UserId": 15,
+        "Login": "xerox",
+        "Password": "lovely"
+      },
+      {
+        "_id": "6194c4b74c4aeeed15b6d733",
+        "UserId": 20,
+        "Login": "web",
+        "Password": "qwerty"
+      },
+      {
+        "_id": "6194c4b74c4aeeed15b6d731",
+        "UserId": 18,
+        "Login": "pos",
+        "Password": "michael"
+      },
+      {
+        "_id": "6194c4b74c4aeeed15b6d736",
+        "UserId": 42,
+        "Login": "dreadks",
+        "Password": "hEMPpU"
+      }
+    ]
+  },
+  {
+    "collectionName": "Worker",
+    "data": [
+      {
+        "_id": "6194c4ea4c4aeeed15b711f1",
+        "WorkerId": 89,
+        "FullName": "Самойлов Мечислав Иванович",
+        "MinSalary": 115,
+        "UserId": 15,
+        "DepartamentId": 4
+      },
+      {
+        "_id": "6194c4ea4c4aeeed15b711e2",
+        "WorkerId": 106,
+        "FullName": "Родионова Кира Феликсовна",
+        "MinSalary": 710,
+        "UserId": 40,
+        "DepartamentId": 7
+      },
+      {
+        "_id": "6194c4ea4c4aeeed15b711eb",
+        "WorkerId": 83,
+        "FullName": "Артемьев Вольдемар Федотович",
+        "MinSalary": 100,
+        "UserId": 14,
+        "DepartamentId": 1
+      },
+      {
+        "_id": "6194c4ea4c4aeeed15b711e3",
+        "WorkerId": 107,
+        "FullName": "Полякова Юнона Авдеевна",
+        "MinSalary": 80,
+        "UserId": 41,
+        "DepartamentId": 7
+      },
+      {
+        "_id": "6194c4ea4c4aeeed15b711e8",
+        "WorkerId": 112,
+        "FullName": "Ермаков Бенедикт Петрович",
+        "MinSalary": 720,
+        "UserId": 46,
+        "DepartamentId": 10
+      },
+      {
+        "_id": "6194c4ea4c4aeeed15b711ef",
+        "WorkerId": 87,
+        "FullName": "Хохлов Борис Авдеевич",
+        "MinSalary": 200,
+        "UserId": 7,
+        "DepartamentId": 3
+      },
+      {
+        "_id": "6194c4ea4c4aeeed15b711f2",
+        "WorkerId": 90,
+        "FullName": "Кулагин Пантелей Вениаминович",
+        "MinSalary": 235,
+        "UserId": 4,
+        "DepartamentId": 4
+      },
+      {
+        "_id": "6194c4ea4c4aeeed15b711e6",
+        "WorkerId": 110,
+        "FullName": "Анисимов Павел Яковлевич",
+        "MinSalary": 550,
+        "UserId": 44,
+        "DepartamentId": 9
+      },
+      {
+        "_id": "6194c4ea4c4aeeed15b711ec",
+        "WorkerId": 84,
+        "FullName": "Фёдоров Артем Якунович",
+        "MinSalary": 200,
+        "UserId": 6,
+        "DepartamentId": 1
+      },
+      {
+        "_id": "6194c4ea4c4aeeed15b711e4",
+        "WorkerId": 108,
+        "FullName": "Хохлова Герда Онисимовна",
+        "MinSalary": 210,
+        "UserId": 42,
+        "DepartamentId": 8
+      },
+      {
+        "_id": "6194c4ea4c4aeeed15b711e5",
+        "WorkerId": 109,
+        "FullName": "Шилова Олеся Якуновна",
+        "MinSalary": 205,
+        "UserId": 43,
+        "DepartamentId": 8
+      },
+      {
+        "_id": "6194c4ea4c4aeeed15b711f4",
+        "WorkerId": 92,
+        "FullName": "Пономарёв Климент Феликсович",
+        "MinSalary": 540,
+        "UserId": 13,
+        "DepartamentId": 6
+      },
+      {
+        "_id": "6194c4ea4c4aeeed15b711f0",
+        "WorkerId": 88,
+        "FullName": "Денисов Болеслав Тарасович",
+        "MinSalary": 1100,
+        "UserId": 9,
+        "DepartamentId": 3
+      },
+      {
+        "_id": "6194c4ea4c4aeeed15b711e7",
+        "WorkerId": 111,
+        "FullName": "Носков Вадим Анатольевич",
+        "MinSalary": 640,
+        "UserId": 45,
+        "DepartamentId": 9
+      },
+      {
+        "_id": "6194c4ea4c4aeeed15b711f3",
+        "WorkerId": 91,
+        "FullName": "Елисеев Арсений Артёмович",
+        "MinSalary": 200,
+        "UserId": 18,
+        "DepartamentId": 6
+      },
+      {
+        "_id": "6194c4ea4c4aeeed15b711e9",
+        "WorkerId": 113,
+        "FullName": "Сысоев Арсений Всеволодович",
+        "MinSalary": 330,
+        "UserId": 47,
+        "DepartamentId": 10
+      },
+      {
+        "_id": "6194dedf4c4aeeed15d68153",
+        "WorkerId": 114,
+        "FullName": "Игнатьев Вячеслав Дмитриевич",
+        "MinSalary": 314,
+        "UserId": 48,
+        "DepartamentId": 2
+      },
+      {
+        "_id": "6194dee04c4aeeed15d6818b",
+        "WorkerId": 85,
+        "FullName": "Агафонов Исаак Лаврентьевич",
+        "MinSalary": 300,
+        "UserId": 17,
+        "DepartamentId": 2
+      },
+      {
+        "_id": "6194dee04c4aeeed15d681eb",
+        "WorkerId": 86,
+        "FullName": "Князев Корнелий Богданович",
+        "MinSalary": 100,
+        "UserId": 1,
+        "DepartamentId": 2
+      }
+    ]
+  }
+]
