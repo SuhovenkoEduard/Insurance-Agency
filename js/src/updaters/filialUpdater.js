@@ -9,7 +9,7 @@ const update = (collections, funcs) => {
 
   filials = filials.map(filial => {
     let propName = 'FilialId';
-    let add = departaments.filter(department => filial[propName] === filial[propName]);
+    let add = departaments.filter(department => filial[propName] === department[propName]);
     return {
       ...filial,
       Departments: add

@@ -1,80 +1,5 @@
 [
   {
-    "collectionName": "Client",
-    "data": [
-      {
-        "ClientId": 6,
-        "PhoneNumber": "375297395736",
-        "FullName": "Родионова Ванесса Максовна",
-        "Adress": "Дзержинского улица",
-        "UserId": 8
-      },
-      {
-        "ClientId": 2,
-        "PhoneNumber": "375298989833",
-        "FullName": "Моисеев Григорий Еремеевич",
-        "Adress": "Давыдовская улица",
-        "UserId": 10
-      },
-      {
-        "ClientId": 4,
-        "PhoneNumber": "375298596602",
-        "FullName": "Мухин Гурий Яковович",
-        "Adress": "Дворникова улица",
-        "UserId": 2
-      },
-      {
-        "ClientId": 8,
-        "PhoneNumber": "375629872340",
-        "FullName": "Шестакова Глория Евсеевна",
-        "Adress": "Днепропетровский переулок",
-        "UserId": 3
-      },
-      {
-        "ClientId": 3,
-        "PhoneNumber": "375296375792",
-        "FullName": "Куликов Зиновий Филатович",
-        "Adress": "Дальняя улица",
-        "UserId": 16
-      },
-      {
-        "ClientId": 10,
-        "PhoneNumber": "375297214577",
-        "FullName": "Фомичёва Яна Юлиановна",
-        "Adress": "Дорожная улица",
-        "UserId": 19
-      },
-      {
-        "ClientId": 1,
-        "PhoneNumber": "375296400084",
-        "FullName": "Савин Даниил Васильевич",
-        "Adress": "Жукова улица",
-        "UserId": 11
-      },
-      {
-        "ClientId": 5,
-        "PhoneNumber": "375295235085",
-        "FullName": "Куликов Агафон Николаевич",
-        "Adress": "Джураева улица",
-        "UserId": 20
-      },
-      {
-        "ClientId": 7,
-        "PhoneNumber": "375296394317",
-        "FullName": "Евсеева Виктория Филатовна",
-        "Adress": "Димитрова улица",
-        "UserId": 12
-      },
-      {
-        "ClientId": 9,
-        "PhoneNumber": "375292073833",
-        "FullName": "Савельева Илона Георгиевна",
-        "Adress": "Докутович улица",
-        "UserId": 5
-      }
-    ]
-  },
-  {
     "collectionName": "Contract",
     "data": [
       {
@@ -86,8 +11,10 @@
         "Cost": 230,
         "InsurancePeriod": 2,
         "Comment": "-",
-        "StatusId": 1,
-        "Title": "Подтверждён"
+        "Status": {
+          "StatusId": 1,
+          "Title": "Подтверждён"
+        }
       },
       {
         "ContractId": 41,
@@ -98,8 +25,10 @@
         "Cost": 100,
         "InsurancePeriod": 5,
         "Comment": "-",
-        "StatusId": 1,
-        "Title": "Подтверждён"
+        "Status": {
+          "StatusId": 1,
+          "Title": "Подтверждён"
+        }
       },
       {
         "ContractId": 43,
@@ -110,8 +39,10 @@
         "Cost": 400,
         "InsurancePeriod": 3,
         "Comment": "-",
-        "StatusId": 3,
-        "Title": "Отклонён"
+        "Status": {
+          "StatusId": 3,
+          "Title": "Отклонён"
+        }
       },
       {
         "ContractId": 50,
@@ -122,8 +53,10 @@
         "Cost": 580,
         "InsurancePeriod": 4,
         "Comment": "-",
-        "StatusId": 1,
-        "Title": "Подтверждён"
+        "Status": {
+          "StatusId": 1,
+          "Title": "Подтверждён"
+        }
       },
       {
         "ContractId": 45,
@@ -134,8 +67,10 @@
         "Cost": 750,
         "InsurancePeriod": 2,
         "Comment": "-",
-        "StatusId": 2,
-        "Title": "В обработке"
+        "Status": {
+          "StatusId": 2,
+          "Title": "В обработке"
+        }
       },
       {
         "ContractId": 61,
@@ -146,8 +81,10 @@
         "Cost": 426,
         "InsurancePeriod": 2,
         "Comment": "-",
-        "StatusId": 2,
-        "Title": "В обработке"
+        "Status": {
+          "StatusId": 2,
+          "Title": "В обработке"
+        }
       },
       {
         "ContractId": 58,
@@ -158,8 +95,10 @@
         "Cost": 550,
         "InsurancePeriod": 5,
         "Comment": "-",
-        "StatusId": 2,
-        "Title": "В обработке"
+        "Status": {
+          "StatusId": 2,
+          "Title": "В обработке"
+        }
       },
       {
         "ContractId": 59,
@@ -170,8 +109,10 @@
         "Cost": 213,
         "InsurancePeriod": 1,
         "Comment": "Бог есть.",
-        "StatusId": 2,
-        "Title": "В обработке"
+        "Status": {
+          "StatusId": 2,
+          "Title": "В обработке"
+        }
       },
       {
         "ContractId": 47,
@@ -182,8 +123,10 @@
         "Cost": 100,
         "InsurancePeriod": 5,
         "Comment": "-",
-        "StatusId": 1,
-        "Title": "Подтверждён"
+        "Status": {
+          "StatusId": 1,
+          "Title": "Подтверждён"
+        }
       },
       {
         "ContractId": 44,
@@ -194,8 +137,10 @@
         "Cost": 250,
         "InsurancePeriod": 5,
         "Comment": "-",
-        "StatusId": 1,
-        "Title": "Подтверждён"
+        "Status": {
+          "StatusId": 1,
+          "Title": "Подтверждён"
+        }
       },
       {
         "ContractId": 46,
@@ -206,8 +151,10 @@
         "Cost": 200,
         "InsurancePeriod": 5,
         "Comment": "-",
-        "StatusId": 1,
-        "Title": "Подтверждён"
+        "Status": {
+          "StatusId": 1,
+          "Title": "Подтверждён"
+        }
       },
       {
         "ContractId": 42,
@@ -218,8 +165,10 @@
         "Cost": 300,
         "InsurancePeriod": 2,
         "Comment": "-",
-        "StatusId": 1,
-        "Title": "Подтверждён"
+        "Status": {
+          "StatusId": 1,
+          "Title": "Подтверждён"
+        }
       },
       {
         "ContractId": 48,
@@ -230,8 +179,10 @@
         "Cost": 110,
         "InsurancePeriod": 1,
         "Comment": "-",
-        "StatusId": 2,
-        "Title": "В обработке"
+        "Status": {
+          "StatusId": 2,
+          "Title": "В обработке"
+        }
       },
       {
         "ContractId": 62,
@@ -242,8 +193,10 @@
         "Cost": 1684,
         "InsurancePeriod": 2,
         "Comment": "-",
-        "StatusId": 1,
-        "Title": "Подтверждён"
+        "Status": {
+          "StatusId": 1,
+          "Title": "Подтверждён"
+        }
       },
       {
         "ContractId": 63,
@@ -254,8 +207,10 @@
         "Cost": 900,
         "InsurancePeriod": 3,
         "Comment": "213214",
-        "StatusId": 1,
-        "Title": "Подтверждён"
+        "Status": {
+          "StatusId": 1,
+          "Title": "Подтверждён"
+        }
       }
     ]
   },
@@ -294,11 +249,6 @@
         "DateOfCreation": "11:08:2016",
         "Departments": [
           {
-            "DepartamentId": 8,
-            "DTypeID": 2,
-            "FilialId": 4
-          },
-          {
             "DepartamentId": 4,
             "DTypeID": 4,
             "FilialId": 3
@@ -319,24 +269,9 @@
             "FilialId": 3
           },
           {
-            "DepartamentId": 9,
-            "DTypeID": 3,
-            "FilialId": 4
-          },
-          {
-            "DepartamentId": 7,
-            "DTypeID": 1,
-            "FilialId": 4
-          },
-          {
             "DepartamentId": 6,
             "DTypeID": 5,
             "FilialId": 3
-          },
-          {
-            "DepartamentId": 10,
-            "DTypeID": 4,
-            "FilialId": 4
           }
         ]
       },
@@ -352,26 +287,6 @@
             "FilialId": 4
           },
           {
-            "DepartamentId": 4,
-            "DTypeID": 4,
-            "FilialId": 3
-          },
-          {
-            "DepartamentId": 3,
-            "DTypeID": 3,
-            "FilialId": 3
-          },
-          {
-            "DepartamentId": 1,
-            "DTypeID": 1,
-            "FilialId": 3
-          },
-          {
-            "DepartamentId": 2,
-            "DTypeID": 2,
-            "FilialId": 3
-          },
-          {
             "DepartamentId": 9,
             "DTypeID": 3,
             "FilialId": 4
@@ -380,11 +295,6 @@
             "DepartamentId": 7,
             "DTypeID": 1,
             "FilialId": 4
-          },
-          {
-            "DepartamentId": 6,
-            "DTypeID": 5,
-            "FilialId": 3
           },
           {
             "DepartamentId": 10,
@@ -443,328 +353,467 @@
     ]
   },
   {
+    "collectionName": "Status",
+    "data": [
+      {
+        "StatusId": 2,
+        "Title": "В обработке"
+      },
+      {
+        "StatusId": 1,
+        "Title": "Подтверждён"
+      },
+      {
+        "StatusId": 3,
+        "Title": "Отклонён"
+      }
+    ]
+  },
+  {
     "collectionName": "User",
     "data": [
       {
         "UserId": 5,
         "Login": "info",
-        "Password": "iloveyou"
+        "Password": "iloveyou",
+        "Client": {
+          "ClientId": 9,
+          "PhoneNumber": "375292073833",
+          "FullName": "Савельева Илона Георгиевна",
+          "Adress": "Докутович улица",
+          "UserId": 5
+        }
       },
       {
         "UserId": 1,
         "Login": "manager",
-        "Password": "123456"
+        "Password": "123456",
+        "Worker": {
+          "WorkerId": 86,
+          "FullName": "Князев Корнелий Богданович",
+          "MinSalary": 100,
+          "UserId": 1,
+          "DepartamentId": 2,
+          "Agent": {
+            "AgentId": 9,
+            "WorkerId": 86,
+            "PersonalData": "новичок"
+          }
+        }
       },
       {
         "UserId": 6,
         "Login": "local",
-        "Password": "princess"
+        "Password": "princess",
+        "Worker": {
+          "WorkerId": 84,
+          "FullName": "Фёдоров Артем Якунович",
+          "MinSalary": 200,
+          "UserId": 6,
+          "DepartamentId": 1,
+          "Agent": {
+            "AgentId": 5,
+            "WorkerId": 84,
+            "PersonalData": "мастер"
+          }
+        }
       },
       {
         "UserId": 46,
         "Login": "czontnr",
-        "Password": "ab3rRY"
+        "Password": "ab3rRY",
+        "Worker": {
+          "WorkerId": 112,
+          "FullName": "Ермаков Бенедикт Петрович",
+          "MinSalary": 720,
+          "UserId": 46,
+          "DepartamentId": 10,
+          "Agent": {
+            "AgentId": 25,
+            "WorkerId": 112,
+            "PersonalData": "новичок"
+          }
+        }
       },
       {
         "UserId": 17,
         "Login": "sales",
-        "Password": "654321"
+        "Password": "654321",
+        "Worker": {
+          "WorkerId": 85,
+          "FullName": "Агафонов Исаак Лаврентьевич",
+          "MinSalary": 300,
+          "UserId": 17,
+          "DepartamentId": 2,
+          "Agent": {
+            "AgentId": 4,
+            "WorkerId": 85,
+            "PersonalData": "профи"
+          }
+        }
       },
       {
         "UserId": 41,
         "Login": "qvtmxbq",
-        "Password": "jQ5g2x"
+        "Password": "jQ5g2x",
+        "Worker": {
+          "WorkerId": 107,
+          "FullName": "Полякова Юнона Авдеевна",
+          "MinSalary": 80,
+          "UserId": 41,
+          "DepartamentId": 7,
+          "Agent": {
+            "AgentId": 20,
+            "WorkerId": 107,
+            "PersonalData": "профи"
+          }
+        }
       },
       {
         "UserId": 4,
         "Login": "tech",
-        "Password": "password"
+        "Password": "password",
+        "Worker": {
+          "WorkerId": 90,
+          "FullName": "Кулагин Пантелей Вениаминович",
+          "MinSalary": 235,
+          "UserId": 4,
+          "DepartamentId": 4,
+          "Manager": {
+            "ManagerId": 2,
+            "WorkerId": 90,
+            "PersonalData": "Грандмастер"
+          }
+        }
       },
       {
         "UserId": 14,
         "Login": "user2",
-        "Password": "monkey"
+        "Password": "monkey",
+        "Worker": {
+          "WorkerId": 83,
+          "FullName": "Артемьев Вольдемар Федотович",
+          "MinSalary": 100,
+          "UserId": 14,
+          "DepartamentId": 1,
+          "Agent": {
+            "AgentId": 8,
+            "WorkerId": 83,
+            "PersonalData": "новичок"
+          }
+        }
       },
       {
         "UserId": 19,
         "Login": "pos1",
-        "Password": "ashley"
+        "Password": "ashley",
+        "Client": {
+          "ClientId": 10,
+          "PhoneNumber": "375297214577",
+          "FullName": "Фомичёва Яна Юлиановна",
+          "Adress": "Дорожная улица",
+          "UserId": 19
+        }
       },
       {
         "UserId": 16,
         "Login": "besadmin",
-        "Password": "jessica"
+        "Password": "jessica",
+        "Client": {
+          "ClientId": 3,
+          "PhoneNumber": "375296375792",
+          "FullName": "Куликов Зиновий Филатович",
+          "Adress": "Дальняя улица",
+          "UserId": 16
+        }
       },
       {
         "UserId": 13,
         "Login": "root",
-        "Password": "babygirl"
+        "Password": "babygirl",
+        "Worker": {
+          "WorkerId": 92,
+          "FullName": "Пономарёв Климент Феликсович",
+          "MinSalary": 540,
+          "UserId": 13,
+          "DepartamentId": 6,
+          "Manager": {
+            "ManagerId": 5,
+            "WorkerId": 92,
+            "PersonalData": "Профессионал"
+          }
+        }
       },
       {
         "UserId": 43,
         "Login": "jrhijqv",
-        "Password": "2Hj3o3"
+        "Password": "2Hj3o3",
+        "Worker": {
+          "WorkerId": 109,
+          "FullName": "Шилова Олеся Якуновна",
+          "MinSalary": 205,
+          "UserId": 43,
+          "DepartamentId": 8,
+          "Agent": {
+            "AgentId": 22,
+            "WorkerId": 109,
+            "PersonalData": "новичок"
+          }
+        }
       },
       {
         "UserId": 2,
         "Login": "letmein",
-        "Password": "12345"
+        "Password": "12345",
+        "Client": {
+          "ClientId": 4,
+          "PhoneNumber": "375298596602",
+          "FullName": "Мухин Гурий Яковович",
+          "Adress": "Дворникова улица",
+          "UserId": 2
+        }
       },
       {
         "UserId": 44,
         "Login": "rovjqdu",
-        "Password": "5VZPEJ"
+        "Password": "5VZPEJ",
+        "Worker": {
+          "WorkerId": 110,
+          "FullName": "Анисимов Павел Яковлевич",
+          "MinSalary": 550,
+          "UserId": 44,
+          "DepartamentId": 9,
+          "Agent": {
+            "AgentId": 23,
+            "WorkerId": 110,
+            "PersonalData": "новичок"
+          }
+        }
       },
       {
         "UserId": 11,
         "Login": "changeme",
-        "Password": "nicole"
+        "Password": "nicole",
+        "Client": {
+          "ClientId": 1,
+          "PhoneNumber": "375296400084",
+          "FullName": "Савин Даниил Васильевич",
+          "Adress": "Жукова улица",
+          "UserId": 11
+        }
       },
       {
         "UserId": 40,
         "Login": "odftvlu",
-        "Password": "ZXYgoH"
+        "Password": "ZXYgoH",
+        "Worker": {
+          "WorkerId": 106,
+          "FullName": "Родионова Кира Феликсовна",
+          "MinSalary": 710,
+          "UserId": 40,
+          "DepartamentId": 7,
+          "Agent": {
+            "AgentId": 19,
+            "WorkerId": 106,
+            "PersonalData": "альфасамец"
+          }
+        }
       },
       {
         "UserId": 45,
         "Login": "spskdex",
-        "Password": "Tf8xqn"
+        "Password": "Tf8xqn",
+        "Worker": {
+          "WorkerId": 111,
+          "FullName": "Носков Вадим Анатольевич",
+          "MinSalary": 640,
+          "UserId": 45,
+          "DepartamentId": 9,
+          "Agent": {
+            "AgentId": 24,
+            "WorkerId": 111,
+            "PersonalData": "новичок"
+          }
+        }
       },
       {
         "UserId": 47,
         "Login": "olinlxs",
-        "Password": "ig5JSd"
+        "Password": "ig5JSd",
+        "Worker": {
+          "WorkerId": 113,
+          "FullName": "Сысоев Арсений Всеволодович",
+          "MinSalary": 330,
+          "UserId": 47,
+          "DepartamentId": 10,
+          "Agent": {
+            "AgentId": 26,
+            "WorkerId": 113,
+            "PersonalData": "новичок"
+          }
+        }
       },
       {
         "UserId": 3,
         "Login": "qwerty",
-        "Password": "123456789"
+        "Password": "123456789",
+        "Client": {
+          "ClientId": 8,
+          "PhoneNumber": "375629872340",
+          "FullName": "Шестакова Глория Евсеевна",
+          "Adress": "Днепропетровский переулок",
+          "UserId": 3
+        }
       },
       {
         "UserId": 7,
         "Login": "system",
-        "Password": "1234567"
+        "Password": "1234567",
+        "Worker": {
+          "WorkerId": 87,
+          "FullName": "Хохлов Борис Авдеевич",
+          "MinSalary": 200,
+          "UserId": 7,
+          "DepartamentId": 3,
+          "Agent": {
+            "AgentId": 3,
+            "WorkerId": 87,
+            "PersonalData": "альфасамец"
+          }
+        }
       },
       {
         "UserId": 8,
         "Login": "pa$$word",
-        "Password": "rockyou"
+        "Password": "rockyou",
+        "Client": {
+          "ClientId": 6,
+          "PhoneNumber": "375297395736",
+          "FullName": "Родионова Ванесса Максовна",
+          "Adress": "Дзержинского улица",
+          "UserId": 8
+        }
       },
       {
         "UserId": 48,
         "Login": "admin",
-        "Password": "admin"
+        "Password": "admin",
+        "Worker": {
+          "WorkerId": 114,
+          "FullName": "Игнатьев Вячеслав Дмитриевич",
+          "MinSalary": 314,
+          "UserId": 48,
+          "DepartamentId": 2,
+          "Manager": {
+            "ManagerId": 7,
+            "WorkerId": 114,
+            "PersonalData": "Легенда"
+          }
+        }
       },
       {
         "UserId": 9,
         "Login": "access",
-        "Password": "12345678"
+        "Password": "12345678",
+        "Worker": {
+          "WorkerId": 88,
+          "FullName": "Денисов Болеслав Тарасович",
+          "MinSalary": 1100,
+          "UserId": 9,
+          "DepartamentId": 3,
+          "Agent": {
+            "AgentId": 10,
+            "WorkerId": 88,
+            "PersonalData": "новичок"
+          }
+        }
       },
       {
         "UserId": 10,
         "Login": "success",
-        "Password": "abc123"
+        "Password": "abc123",
+        "Client": {
+          "ClientId": 2,
+          "PhoneNumber": "375298989833",
+          "FullName": "Моисеев Григорий Еремеевич",
+          "Adress": "Давыдовская улица",
+          "UserId": 10
+        }
       },
       {
         "UserId": 12,
         "Login": "master",
-        "Password": "daniel"
+        "Password": "daniel",
+        "Client": {
+          "ClientId": 7,
+          "PhoneNumber": "375296394317",
+          "FullName": "Евсеева Виктория Филатовна",
+          "Adress": "Димитрова улица",
+          "UserId": 12
+        }
       },
       {
         "UserId": 15,
         "Login": "xerox",
-        "Password": "lovely"
+        "Password": "lovely",
+        "Worker": {
+          "WorkerId": 89,
+          "FullName": "Самойлов Мечислав Иванович",
+          "MinSalary": 115,
+          "UserId": 15,
+          "DepartamentId": 4,
+          "Agent": {
+            "AgentId": 11,
+            "WorkerId": 89,
+            "PersonalData": "мастер"
+          }
+        }
       },
       {
         "UserId": 20,
         "Login": "web",
-        "Password": "qwerty"
+        "Password": "qwerty",
+        "Client": {
+          "ClientId": 5,
+          "PhoneNumber": "375295235085",
+          "FullName": "Куликов Агафон Николаевич",
+          "Adress": "Джураева улица",
+          "UserId": 20
+        }
       },
       {
         "UserId": 18,
         "Login": "pos",
-        "Password": "michael"
+        "Password": "michael",
+        "Worker": {
+          "WorkerId": 91,
+          "FullName": "Елисеев Арсений Артёмович",
+          "MinSalary": 200,
+          "UserId": 18,
+          "DepartamentId": 6,
+          "Manager": {
+            "ManagerId": 4,
+            "WorkerId": 91,
+            "PersonalData": "Стажёр"
+          }
+        }
       },
       {
         "UserId": 42,
         "Login": "dreadks",
-        "Password": "hEMPpU"
-      }
-    ]
-  },
-  {
-    "collectionName": "Worker",
-    "data": [
-      {
-        "WorkerId": 89,
-        "FullName": "Самойлов Мечислав Иванович",
-        "MinSalary": 115,
-        "UserId": 15,
-        "DepartamentId": 4,
-        "AgentId": 11,
-        "PersonalData": "мастер"
-      },
-      {
-        "WorkerId": 106,
-        "FullName": "Родионова Кира Феликсовна",
-        "MinSalary": 710,
-        "UserId": 40,
-        "DepartamentId": 7,
-        "AgentId": 19,
-        "PersonalData": "альфасамец"
-      },
-      {
-        "WorkerId": 83,
-        "FullName": "Артемьев Вольдемар Федотович",
-        "MinSalary": 100,
-        "UserId": 14,
-        "DepartamentId": 1,
-        "AgentId": 8,
-        "PersonalData": "новичок"
-      },
-      {
-        "WorkerId": 107,
-        "FullName": "Полякова Юнона Авдеевна",
-        "MinSalary": 80,
-        "UserId": 41,
-        "DepartamentId": 7,
-        "AgentId": 20,
-        "PersonalData": "профи"
-      },
-      {
-        "WorkerId": 112,
-        "FullName": "Ермаков Бенедикт Петрович",
-        "MinSalary": 720,
-        "UserId": 46,
-        "DepartamentId": 10,
-        "AgentId": 25,
-        "PersonalData": "новичок"
-      },
-      {
-        "WorkerId": 87,
-        "FullName": "Хохлов Борис Авдеевич",
-        "MinSalary": 200,
-        "UserId": 7,
-        "DepartamentId": 3,
-        "AgentId": 3,
-        "PersonalData": "альфасамец"
-      },
-      {
-        "WorkerId": 90,
-        "FullName": "Кулагин Пантелей Вениаминович",
-        "MinSalary": 235,
-        "UserId": 4,
-        "DepartamentId": 4,
-        "ManagerId": 2,
-        "PersonalData": "Грандмастер"
-      },
-      {
-        "WorkerId": 110,
-        "FullName": "Анисимов Павел Яковлевич",
-        "MinSalary": 550,
-        "UserId": 44,
-        "DepartamentId": 9,
-        "AgentId": 23,
-        "PersonalData": "новичок"
-      },
-      {
-        "WorkerId": 84,
-        "FullName": "Фёдоров Артем Якунович",
-        "MinSalary": 200,
-        "UserId": 6,
-        "DepartamentId": 1,
-        "AgentId": 5,
-        "PersonalData": "мастер"
-      },
-      {
-        "WorkerId": 108,
-        "FullName": "Хохлова Герда Онисимовна",
-        "MinSalary": 210,
-        "UserId": 42,
-        "DepartamentId": 8,
-        "AgentId": 21,
-        "PersonalData": "мастер"
-      },
-      {
-        "WorkerId": 109,
-        "FullName": "Шилова Олеся Якуновна",
-        "MinSalary": 205,
-        "UserId": 43,
-        "DepartamentId": 8,
-        "AgentId": 22,
-        "PersonalData": "новичок"
-      },
-      {
-        "WorkerId": 92,
-        "FullName": "Пономарёв Климент Феликсович",
-        "MinSalary": 540,
-        "UserId": 13,
-        "DepartamentId": 6,
-        "ManagerId": 5,
-        "PersonalData": "Профессионал"
-      },
-      {
-        "WorkerId": 88,
-        "FullName": "Денисов Болеслав Тарасович",
-        "MinSalary": 1100,
-        "UserId": 9,
-        "DepartamentId": 3,
-        "AgentId": 10,
-        "PersonalData": "новичок"
-      },
-      {
-        "WorkerId": 111,
-        "FullName": "Носков Вадим Анатольевич",
-        "MinSalary": 640,
-        "UserId": 45,
-        "DepartamentId": 9,
-        "AgentId": 24,
-        "PersonalData": "новичок"
-      },
-      {
-        "WorkerId": 91,
-        "FullName": "Елисеев Арсений Артёмович",
-        "MinSalary": 200,
-        "UserId": 18,
-        "DepartamentId": 6,
-        "ManagerId": 4,
-        "PersonalData": "Стажёр"
-      },
-      {
-        "WorkerId": 113,
-        "FullName": "Сысоев Арсений Всеволодович",
-        "MinSalary": 330,
-        "UserId": 47,
-        "DepartamentId": 10,
-        "AgentId": 26,
-        "PersonalData": "новичок"
-      },
-      {
-        "WorkerId": 114,
-        "FullName": "Игнатьев Вячеслав Дмитриевич",
-        "MinSalary": 314,
-        "UserId": 48,
-        "DepartamentId": 2,
-        "ManagerId": 7,
-        "PersonalData": "Легенда"
-      },
-      {
-        "WorkerId": 85,
-        "FullName": "Агафонов Исаак Лаврентьевич",
-        "MinSalary": 300,
-        "UserId": 17,
-        "DepartamentId": 2,
-        "AgentId": 4,
-        "PersonalData": "профи"
-      },
-      {
-        "WorkerId": 86,
-        "FullName": "Князев Корнелий Богданович",
-        "MinSalary": 100,
-        "UserId": 1,
-        "DepartamentId": 2,
-        "AgentId": 9,
-        "PersonalData": "новичок"
+        "Password": "hEMPpU",
+        "Worker": {
+          "WorkerId": 108,
+          "FullName": "Хохлова Герда Онисимовна",
+          "MinSalary": 210,
+          "UserId": 42,
+          "DepartamentId": 8,
+          "Agent": {
+            "AgentId": 21,
+            "WorkerId": 108,
+            "PersonalData": "мастер"
+          }
+        }
       }
     ]
   }

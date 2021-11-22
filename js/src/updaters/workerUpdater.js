@@ -7,9 +7,13 @@ const update = (collections, funcs) => {
     let propName = 'WorkerId';
     let add;
     if (managers.some(manager => manager[propName] === worker[propName])) {
-      add = managers.filter(manager => manager[propName] === worker[propName])[0];
+      add = {
+        Manager: managers.filter(manager => manager[propName] === worker[propName])[0]
+      };
     } else {
-      add = agents.filter(agent => agent[propName] === worker[propName])[0];
+      add = {
+        Agent: agents.filter(agent => agent[propName] === worker[propName])[0]
+      };
     }
     return {
       ...worker,
