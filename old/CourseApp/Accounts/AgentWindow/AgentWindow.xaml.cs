@@ -21,11 +21,11 @@ namespace CourseApp.Accounts.AgentWindow
     /// </summary>
     public partial class AgentWindow : Window
     {
-        protected DataLayer.DataLayer dataLayer;
+        protected DataLayer.SQLLayer dataLayer;
         protected object cellValue;
         protected Agent agent;
 
-        public AgentWindow(Agent agent, DataLayer.DataLayer dataLayer)
+        public AgentWindow(Agent agent, DataLayer.SQLLayer dataLayer)
         {
             InitializeComponent();
 

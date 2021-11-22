@@ -3,7 +3,7 @@ using CourseApp.DataLayer.Services;
 
 namespace CourseApp.DataLayer
 {
-    public class DataLayer
+    public class SQLLayer
     {
         public AgentService Agents { get; set; }
         public ClientService Clients { get; set; }
@@ -16,7 +16,7 @@ namespace CourseApp.DataLayer
         public UserService Users { get; set; }
         public WorkerService Workers { get; set; }
 
-        public DataLayer(IAdapter adapter)
+        public SQLLayer(IAdapter adapter)
         {
             Agents = new AgentService(adapter);
             Clients = new ClientService(adapter);

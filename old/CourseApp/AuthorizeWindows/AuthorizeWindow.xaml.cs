@@ -9,8 +9,8 @@ namespace CourseApp
     /// </summary>
     public partial class AuthorizeWindow : Window
     {
-        protected DataLayer.DataLayer dataLayer;
-        public AuthorizeWindow(DataLayer.DataLayer dataLayer)
+        protected DataLayer.SQLLayer dataLayer;
+        public AuthorizeWindow(DataLayer.SQLLayer dataLayer)
         {
             InitializeComponent();
             this.dataLayer = dataLayer;

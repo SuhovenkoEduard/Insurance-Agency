@@ -24,8 +24,8 @@ namespace CourseApp.AuthorizeWindows.SignIn
     /// </summary>
     public partial class SignInWindow : Window
     {
-        protected DataLayer.DataLayer dataLayer;
-        public SignInWindow(DataLayer.DataLayer dataLayer)
+        protected DataLayer.SQLLayer dataLayer;
+        public SignInWindow(DataLayer.SQLLayer dataLayer)
         {
             InitializeComponent();
             this.dataLayer = dataLayer;

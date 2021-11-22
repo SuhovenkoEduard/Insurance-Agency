@@ -21,10 +21,10 @@ namespace CourseApp.Accounts.ClientWindow
     /// </summary>
     public partial class ClientWindow : Window
     {
-        protected DataLayer.DataLayer dataLayer;
+        protected DataLayer.SQLLayer dataLayer;
         protected Client client;
 
-        public ClientWindow(Client client, DataLayer.DataLayer dataLayer)
+        public ClientWindow(Client client, DataLayer.SQLLayer dataLayer)
         {
             InitializeComponent();
             this.client = client;

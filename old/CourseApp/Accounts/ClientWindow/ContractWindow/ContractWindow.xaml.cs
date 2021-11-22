@@ -20,7 +20,7 @@ namespace CourseApp.Accounts.ClientWindow.ContractWindow
     /// </summary>
     public partial class ContractWindow : Window
     {
-        protected DataLayer.DataLayer dataLayer;
+        protected DataLayer.SQLLayer dataLayer;
         protected Client client;
 
         protected Filial filial;
@@ -32,7 +32,7 @@ namespace CourseApp.Accounts.ClientWindow.ContractWindow
         protected int cost;
         protected string comment;
 
-        public ContractWindow(Client client, DataLayer.DataLayer dataLayer)
+        public ContractWindow(Client client, DataLayer.SQLLayer dataLayer)
         {
             InitializeComponent();
             this.client = client;

@@ -185,13 +185,13 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>CourseDBDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="DataLayer\DataLayer.cs" />
+    <Compile Include="DataLayer\SQLLayer.cs" />
     <Compile Include="DataLayer\DBs\AccessDB.cs" />
     <Compile Include="DataLayer\Adapters\AccessAdapter.cs" />
     <Compile Include="DataLayer\Adapters\IAdapter.cs" />
     <Compile Include="DataLayer\Adapters\MongoAdapter.cs" />
     <Compile Include="DataLayer\DBs\MongoDB.cs" />
-    <Compile Include="DataLayer\MongoLayer.cs" />
+    <Compile Include="DataLayer\NoSQLLayer.cs" />
     <Compile Include="DataLayer\Services\NoSQL\AgentSer2.cs" />
     <Compile Include="DataLayer\Services\NoSQL\ClientSer2.cs" />
     <Compile Include="DataLayer\Services\NoSQL\ContractSer2.cs" />

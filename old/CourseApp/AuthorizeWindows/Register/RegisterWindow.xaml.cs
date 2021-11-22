@@ -23,10 +23,10 @@ namespace CourseApp.AuthorizeWindows.Register
     public partial class RegisterWindow : Window
     {
         public int CodeOfUser { get; set; }
-        protected DataLayer.DataLayer dataLayer;
+        protected DataLayer.SQLLayer dataLayer;
         private RegisterInfoOfClient registerInfo;
         
-        public RegisterWindow(DataLayer.DataLayer dataLayer)
+        public RegisterWindow(DataLayer.SQLLayer dataLayer)
         {
             InitializeComponent();
             registerInfo = new RegisterInfoOfClient(dataLayer);

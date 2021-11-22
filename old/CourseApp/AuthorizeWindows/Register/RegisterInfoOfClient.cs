@@ -13,7 +13,7 @@ namespace CourseApp.Classes
 {
     class RegisterInfoOfClient : IDataErrorInfo
     {
-        protected DataLayer.DataLayer dataLayer;
+        protected DataLayer.SQLLayer dataLayer;
 
         public string Number { get; set; }
         public string ClientName { get; set; }
@@ -22,7 +22,7 @@ namespace CourseApp.Classes
         public string Password1 { get; set; }
         public string Password2 { get; set; }
 
-        public RegisterInfoOfClient(DataLayer.DataLayer dataLayer)
+        public RegisterInfoOfClient(DataLayer.SQLLayer dataLayer)
         {
             Number = string.Empty;
             ClientName = string.Empty;

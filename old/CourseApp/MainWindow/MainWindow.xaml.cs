@@ -13,7 +13,7 @@ namespace CourseApp
     public partial class MainWindow : Window
     {
         protected IAdapter adapter;
-        protected DataLayer.DataLayer dataLayer;
+        protected SQLLayer dataLayer;
 
         public MainWindow()
         {
@@ -24,12 +24,12 @@ namespace CourseApp
             {
                 DataLayer.MongoDB mongo = new DataLayer.MongoDB(ConfigurationManager.ConnectionStrings["MongoDB"].ConnectionString);
                 IAdapter adapter = new MongoAdapter(mongo);
-                dataLayer = new MongoLayer(adapter);
+                dataLayer = new NoSQLLayer(adapter);
             } else
             {
                 AccessDB access = new AccessDB(ConfigurationManager.ConnectionStrings["Access"].ConnectionString);
                 adapter = new AccessAdapter(access);
-                dataLayer = new DataLayer.DataLayer(adapter);
+                dataLayer = new SQLLayer(adapter);
             }
             
             var signInWindow = new SignInWindow(dataLayer);

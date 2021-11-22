@@ -17,16 +17,24 @@ namespace CourseApp.DataLayer.Services.NoSQL
             this._filials = filials;
             this._managers = managers;
         } 
-
-        // [-]
+        
         public override void Add(Contract contract)
         {
-            adapter.Add(contract);
+            var service = adapter.GetAll<Classes.Service>().Find(s => s.ServiceId == contract.ServiceId);
+            var client = _users.GetClients().Find(c => c.ClientId == contract.ClientId);
+            var worker = _users.GetWorkers().Find(w => w.Agent != null && w.Agent.AgentId == contract.AgentId);
+            var status = adapter.GetAll<Status>().Find(s => s.StatusId == contract.StatusId);
+            var newContract = 
+                new Classes.NoSQL.Contract(contract.DateOfConclusion, service, client, worker, contract.Cost, contract.InsurancePeriod, contract.Comment, status);
+            adapter.Add(newContract);
         }
-        // [-]
-        public override void Update(Contract contract) => adapter.Update(contract);
-        // [-]
-        public override void Remove(Contract contract) => adapter.Remove(contract);
+        public override void Update(Contract contract) 
+        {
+            var cur_contract = adapter.GetAll<Classes.NoSQL.Contract>().Find(c => c.ContractId == contract.ContractId);
+            cur_contract.Status = adapter.GetAll<Status>().Find(s => s.StatusId == contract.StatusId);
+            adapter.Update(cur_contract);
+        }
+        public override void Remove(Contract contract) => adapter.Remove(adapter.GetAll<Classes.NoSQL.Contract>().Find(c => c.ContractId == contract.ContractId));
         public override Contract GetContractById(int contractId)
         {
             return adapter.GetAll<Classes.NoSQL.Contract>()

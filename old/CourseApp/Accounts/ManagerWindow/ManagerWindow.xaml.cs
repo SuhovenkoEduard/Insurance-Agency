@@ -20,10 +20,10 @@ namespace CourseApp.Accounts.ManagerWindow
     /// </summary>
     public partial class ManagerWindow : Window
     {
-        protected DataLayer.DataLayer dataLayer;
+        protected DataLayer.SQLLayer dataLayer;
         protected Manager manager;
 
-        public ManagerWindow(Manager manager, DataLayer.DataLayer dataLayer)
+        public ManagerWindow(Manager manager, DataLayer.SQLLayer dataLayer)
         {
             InitializeComponent();
             this.manager = manager;

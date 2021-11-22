@@ -20,11 +20,11 @@ namespace CourseApp.Accounts.ClientWindow.TerminateContractWindow
     /// </summary>
     public partial class TerminateContractWindow : Window
     {
-        protected DataLayer.DataLayer dataLayer;
+        protected DataLayer.SQLLayer dataLayer;
         protected Client client;
         protected Contract contract;
         
-        public TerminateContractWindow(Client client, DataLayer.DataLayer dataLayer)
+        public TerminateContractWindow(Client client, DataLayer.SQLLayer dataLayer)
         {
             InitializeComponent();
             this.client = client;
