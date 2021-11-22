@@ -31,11 +31,8 @@
     "Service": {
       "ServiceId": 1,
       "Title": "Ипотечное страхование",
-      "Cost": 299,
-      "DType": {
-        "DTypeId": 4,
-        "Title": "Страхование ответственности"
-      }
+      "DTypeId": 4,
+      "Cost": 299
     }
   },
   {
@@ -70,11 +67,8 @@
     "Service": {
       "ServiceId": 3,
       "Title": "Гринкарта",
-      "Cost": 300,
-      "DType": {
-        "DTypeId": 1,
-        "Title": "Личного страхования"
-      }
+      "DTypeId": 1,
+      "Cost": 300
     }
   },
   {
@@ -109,11 +103,8 @@
     "Service": {
       "ServiceId": 2,
       "Title": "ОСАГО",
-      "Cost": 100,
-      "DType": {
-        "DTypeId": 5,
-        "Title": "Страхование автомобилей"
-      }
+      "DTypeId": 5,
+      "Cost": 100
     }
   },
   {
@@ -148,11 +139,8 @@
     "Service": {
       "ServiceId": 3,
       "Title": "Гринкарта",
-      "Cost": 300,
-      "DType": {
-        "DTypeId": 1,
-        "Title": "Личного страхования"
-      }
+      "DTypeId": 1,
+      "Cost": 300
     }
   },
   {
@@ -187,11 +175,8 @@
     "Service": {
       "ServiceId": 2,
       "Title": "ОСАГО",
-      "Cost": 100,
-      "DType": {
-        "DTypeId": 5,
-        "Title": "Страхование автомобилей"
-      }
+      "DTypeId": 5,
+      "Cost": 100
     }
   },
   {
@@ -226,11 +211,8 @@
     "Service": {
       "ServiceId": 12,
       "Title": "Имущество",
-      "Cost": 213,
-      "DType": {
-        "DTypeId": 2,
-        "Title": "Имущественного страхования"
-      }
+      "DTypeId": 2,
+      "Cost": 213
     }
   },
   {
@@ -265,11 +247,8 @@
     "Service": {
       "ServiceId": 11,
       "Title": "Здоровье (НС, ДМС, клещ)",
-      "Cost": 110,
-      "DType": {
-        "DTypeId": 3,
-        "Title": "Страхование жизни"
-      }
+      "DTypeId": 3,
+      "Cost": 110
     }
   },
   {
@@ -304,11 +283,8 @@
     "Service": {
       "ServiceId": 12,
       "Title": "Имущество",
-      "Cost": 213,
-      "DType": {
-        "DTypeId": 2,
-        "Title": "Имущественного страхования"
-      }
+      "DTypeId": 2,
+      "Cost": 213
     }
   },
   {
@@ -343,11 +319,8 @@
     "Service": {
       "ServiceId": 3,
       "Title": "Гринкарта",
-      "Cost": 300,
-      "DType": {
-        "DTypeId": 1,
-        "Title": "Личного страхования"
-      }
+      "DTypeId": 1,
+      "Cost": 300
     }
   },
   {
@@ -382,11 +355,8 @@
     "Service": {
       "ServiceId": 2,
       "Title": "ОСАГО",
-      "Cost": 100,
-      "DType": {
-        "DTypeId": 5,
-        "Title": "Страхование автомобилей"
-      }
+      "DTypeId": 5,
+      "Cost": 100
     }
   },
   {
@@ -421,11 +391,8 @@
     "Service": {
       "ServiceId": 3,
       "Title": "Гринкарта",
-      "Cost": 300,
-      "DType": {
-        "DTypeId": 1,
-        "Title": "Личного страхования"
-      }
+      "DTypeId": 1,
+      "Cost": 300
     }
   },
   {
@@ -460,11 +427,8 @@
     "Service": {
       "ServiceId": 2,
       "Title": "ОСАГО",
-      "Cost": 100,
-      "DType": {
-        "DTypeId": 5,
-        "Title": "Страхование автомобилей"
-      }
+      "DTypeId": 5,
+      "Cost": 100
     }
   },
   {
@@ -499,11 +463,8 @@
     "Service": {
       "ServiceId": 1,
       "Title": "Ипотечное страхование",
-      "Cost": 299,
-      "DType": {
-        "DTypeId": 4,
-        "Title": "Страхование ответственности"
-      }
+      "DTypeId": 4,
+      "Cost": 299
     }
   },
   {
@@ -538,11 +499,8 @@
     "Service": {
       "ServiceId": 14,
       "Title": "Путешествия",
-      "Cost": 842,
-      "DType": {
-        "DTypeId": 1,
-        "Title": "Личного страхования"
-      }
+      "DTypeId": 1,
+      "Cost": 842
     }
   },
   {
@@ -577,11 +535,8 @@
     "Service": {
       "ServiceId": 3,
       "Title": "Гринкарта",
-      "Cost": 300,
-      "DType": {
-        "DTypeId": 1,
-        "Title": "Личного страхования"
-      }
+      "DTypeId": 1,
+      "Cost": 300
     }
   }
 ]

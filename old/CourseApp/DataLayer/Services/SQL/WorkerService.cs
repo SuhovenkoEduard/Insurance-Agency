@@ -13,8 +13,8 @@ namespace CourseApp.DataLayer.Services
         public WorkerService(IAdapter adapter)
             : base(adapter) { }
 
-        public void Update(Worker worker) => adapter.Update(worker);
-        public List<Worker> GetWorkersByDepartamentId(int departamentId)
+        public virtual void Update(Worker worker) => adapter.Update(worker);
+        public virtual List<Worker> GetWorkersByDepartamentId(int departamentId)
         {
             var workers = adapter.GetAll<Worker>();
             var result =
@@ -23,11 +23,11 @@ namespace CourseApp.DataLayer.Services
                 select worker;
             return result.ToList();
         }
-        public bool ContainsUserId(int userId)
+        public virtual bool ContainsUserId(int userId)
         {
             return adapter.GetAll<Worker>().Any(x => x.UserId == userId);
         }
-        public int GetWorkerIdByUserId(int userId)
+        public virtual int GetWorkerIdByUserId(int userId)
         {
             return adapter.GetAll<Worker>().First(x => x.UserId == userId).WorkerId;
         }

@@ -1,41 +1,45 @@
 ﻿using CourseApp.Classes;
 using CourseApp.DataLayer.Adapters;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace CourseApp.DataLayer.Services
+namespace CourseApp.DataLayer.Services.NoSQL
 {
-    public class ContractService : Service
+    public class ContractSer2 : ContractService
     {
-        protected ManagerService managerService;
-        public ContractService(IAdapter adapter, ManagerService managerService)
+        public UserSer2 users;
+        public FilialSer2 filials;
+        public ContractSer2(IAdapter adapter, UserSer2 users, FilialSer2 filials)
             : base(adapter) 
         {
-            this.managerService = managerService;
-        }
+            this.users = users;
+            this.filials = filials;
+        } 
 
-        public void Add(Contract contract)
+        // [-]
+        public override void Add(Contract contract)
         {
             adapter.Add(contract);
         }
-        public void Update(Contract contract) => adapter.Update(contract);
-        public void Remove(Contract contract) => adapter.Remove(contract);
-        public Contract GetContractById(int contractId)
+        // [-]
+        public override void Update(Contract contract) => adapter.Update(contract);
+        // [-]
+        public override void Remove(Contract contract) => adapter.Remove(contract);
+        public override Contract GetContractById(int contractId)
         {
-            return adapter.GetAll<Contract>()
-                .First(x => x.ContractId == contractId);
+            return adapter.GetAll<Classes.NoSQL.Contract>()
+                .Where(x => x.ContractId == contractId)
+                .Select(contract => contract.ToSQLContract())
+                .First();
         }
 
 
         // by client
-        public IEnumerable<object> GetFullInfoByClientId(int clientId)
+        public override IEnumerable<object> GetFullInfoByClientId(int clientId)
         {
-            var contracts = adapter.GetAll<Contract>();
-            var agents = adapter.GetAll<Agent>();
-            var workers = adapter.GetAll<Worker>();
+            var contracts = adapter.GetAll<Classes.NoSQL.Contract>();
+            var agents = users.GetAgents();
+            var workers = users.GetWorkers();
             var services = adapter.GetAll<Classes.Service>();
             var statuses = adapter.GetAll<Status>();
 
@@ -47,12 +51,12 @@ namespace CourseApp.DataLayer.Services
                 from status in statuses
 
                 where agent.WorkerId == worker.WorkerId
-                
-                where contract.AgentId == agent.AgentId
-                where contract.ServiceId == service.ServiceId
-                where contract.StatusId == status.StatusId
 
-                where contract.ClientId == clientId
+                where contract.Worker.Agent.AgentId == agent.AgentId
+                where contract.ServiceId == service.ServiceId
+                where contract.Status.StatusId == status.StatusId
+
+                where contract.Client.ClientId == clientId
 
                 select new
                 {
@@ -68,13 +72,13 @@ namespace CourseApp.DataLayer.Services
 
             return result.OrderBy(x => x.ContractId);
         }
-        public IEnumerable<int> GetContractIdByClientId(int clientId)
+        public override IEnumerable<int> GetContractIdByClientId(int clientId)
         {
-            var contracts = adapter.GetAll<Contract>();
+            var contracts = adapter.GetAll<Classes.NoSQL.Contract>();
 
             var result =
                 from contract in contracts
-                where contract.ClientId == clientId
+                where contract.Client.ClientId == clientId
                 orderby contract.ContractId
                 select contract.ContractId;
 
@@ -83,10 +87,10 @@ namespace CourseApp.DataLayer.Services
 
 
         // by agent
-        public IEnumerable<object> GetFullInfoByAgentId(int agentId)
+        public override IEnumerable<object> GetFullInfoByAgentId(int agentId)
         {
-            var contracts = adapter.GetAll<Contract>();
-            var clients = adapter.GetAll<Client>();
+            var contracts = adapter.GetAll<Classes.NoSQL.Contract>();
+            var clients = users.GetClients();
             var services = adapter.GetAll<Classes.Service>();
             var statuses = adapter.GetAll<Status>();
 
@@ -95,12 +99,12 @@ namespace CourseApp.DataLayer.Services
                 from client in clients
                 from service in services
                 from status in statuses
-                
-                where contract.AgentId == agentId
 
-                where contract.ClientId == client.ClientId
+                where contract.Worker.Agent.AgentId == agentId
+
+                where contract.Client.ClientId == client.ClientId
                 where contract.ServiceId == service.ServiceId
-                where contract.StatusId == status.StatusId
+                where contract.Status.StatusId == status.StatusId
 
                 select new
                 {
@@ -116,34 +120,36 @@ namespace CourseApp.DataLayer.Services
 
             return result.OrderBy(x => x.ContractId);
         }
-        public List<Contract> GetContractsInProcessingByAgentId(int agentId)
+        public override List<Contract> GetContractsInProcessingByAgentId(int agentId)
         {
-            return adapter.GetAll<Contract>()
-            .Where(x => x.AgentId == agentId && x.StatusId == 2)
+            return adapter.GetAll<Classes.NoSQL.Contract>()
+            .Where(x => x.Worker.Agent.AgentId == agentId && x.Status.StatusId == 2)
+            .Select(contract => contract.ToSQLContract())
             .ToList();
         }
-        public List<Contract> GetConfirmedContractsByAgentId(int agentId)
+        public override List<Contract> GetConfirmedContractsByAgentId(int agentId)
         {
-            return adapter.GetAll<Contract>()
-            .Where(x => x.AgentId == agentId && x.StatusId == 1)
+            return adapter.GetAll<Classes.NoSQL.Contract>()
+            .Where(x => x.Worker.Agent.AgentId == agentId && x.Status.StatusId == 1)
+            .Select(contract => contract.ToSQLContract())
             .ToList();
         }
 
 
         // by manager
-        public IEnumerable<object> GetReportByManagerId(int managerId)
+        public override IEnumerable<object> GetReportByManagerId(int managerId)
         {
-            var contracts = adapter.GetAll<Contract>();
-            var managers = adapter.GetAll<Manager>();
-            var agents = adapter.GetAll<Agent>();
-            var workers = adapter.GetAll<Worker>();
-            var clients = adapter.GetAll<Client>();
+            var contracts = adapter.GetAll<Classes.NoSQL.Contract>();
+            var managers = users.GetManagers();
+            var agents = users.GetAgents();
+            var workers = users.GetWorkers();
+            var clients = users.GetClients();
             var services = adapter.GetAll<Classes.Service>();
-            var departaments = adapter.GetAll<Departament>();
+            var departaments = filials.GetDepartaments();
             var dTypes = adapter.GetAll<DType>();
 
             var departamentId = managerService.GetDepartamentIdByManagerId(managerId);
-            
+
             var agentInfos =
                 from agent in agents
                 from worker in workers
@@ -157,7 +163,7 @@ namespace CourseApp.DataLayer.Services
 
             var result =
                (from contract in contracts
-                where contract.StatusId == 1
+                where contract.Status.StatusId == 1
                 from agentInfo in agentInfos
 
                 select new
@@ -166,11 +172,11 @@ namespace CourseApp.DataLayer.Services
                     AgentName = agentInfo.AgentName,
                     SumOfContracts =
                        (from agentContract in contracts
-                        where agentContract.AgentId == agentInfo.AgentId
+                        where agentContract.Worker.Agent.AgentId == agentInfo.AgentId
                         select agentContract.Cost).Sum(),
                     CountOfContracts =
                         (from agentContract in contracts
-                         where agentContract.AgentId == agentInfo.AgentId
+                         where agentContract.Worker.Agent.AgentId == agentInfo.AgentId
                          select agentContract.Cost).Count()
                 }).Distinct();
 

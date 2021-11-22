@@ -13,11 +13,11 @@ namespace CourseApp.DataLayer.Services
         public FilialService(IAdapter adapter)
             : base(adapter) { }
 
-        public List<string> GetCities()
+        public virtual List<string> GetCities()
         {
             return adapter.GetAll<Filial>().Select(x => x.City).Distinct().ToList();
         }
-        public Filial GetFilialByCity(string city)
+        public virtual Filial GetFilialByCity(string city)
         {
             return adapter.GetAll<Filial>().First(x => x.City == city);
         }

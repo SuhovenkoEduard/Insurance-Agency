@@ -6,17 +6,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CourseApp.DataLayer.Services
+namespace CourseApp.DataLayer.Services.NoSQL
 {
-    public class DepartamentService : Service
+    public class DepartamentSer2 : DepartamentService
     {
-        public DepartamentService(IAdapter adapter)
-            : base(adapter) { }
+        protected FilialSer2 filials;
+        public DepartamentSer2(IAdapter adapter, FilialSer2 filials)
+            : base(adapter) 
+        {
+            this.filials = filials;
+        }
 
-        public IEnumerable<string> GetDepartamentTitlesByFilial(Filial filial)
+        public override IEnumerable<string> GetDepartamentTitlesByFilial(Filial filial)
         {
             var dTypes = adapter.GetAll<DType>();
-            var departaments = adapter.GetAll<Departament>();
+            var departaments = filials.GetDepartaments();
 
             var result =
                 from dType in dTypes
@@ -27,11 +31,10 @@ namespace CourseApp.DataLayer.Services
 
             return result;
         }
-
-        public Departament GetDepartamentByTitleAndFilialId(string title, int filialId)
+        public override Departament GetDepartamentByTitleAndFilialId(string title, int filialId)
         {
             var dTypes = adapter.GetAll<DType>();
-            var departaments = adapter.GetAll<Departament>();
+            var departaments = filials.GetDepartaments();
 
             var result =
                 from dType in dTypes
@@ -43,9 +46,9 @@ namespace CourseApp.DataLayer.Services
 
             return result.First();
         }
-        public Departament GetDepartamentById(int departamentId)
+        public override Departament GetDepartamentById(int departamentId)
         {
-            var departaments = adapter.GetAll<Departament>();
+            var departaments = filials.GetDepartaments();
 
             var result =
                 from departament in departaments

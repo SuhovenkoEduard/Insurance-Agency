@@ -6,21 +6,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CourseApp.DataLayer.Services
+namespace CourseApp.DataLayer.Services.NoSQL
 {
-    public class ManagerService : Service
+    public class ManagerSer2 : ManagerService
     {
-        protected AgentService agentService;
-        public ManagerService(IAdapter adapter, AgentService agentService)
+        protected UserSer2 users;
+        protected FilialSer2 _filials;
+        public ManagerSer2(IAdapter adapter, UserSer2 users, FilialSer2 filials)
             : base(adapter) 
         {
-            this.agentService = agentService;
+            this.users = users;
+            this._filials = filials;
         }
 
-        public int GetDepartamentIdByManagerId(int managerId)
+        public override int GetDepartamentIdByManagerId(int managerId)
         {
-            var workers = adapter.GetAll<Worker>();
-            var managers = adapter.GetAll<Manager>();
+            var workers = users.GetWorkers();
+            var managers = users.GetManagers();
 
             var result =
                 from worker in workers
@@ -32,10 +34,10 @@ namespace CourseApp.DataLayer.Services
 
             return result.First();
         }
-        public Manager GetManagerByUserId(int userId)
+        public override Manager GetManagerByUserId(int userId)
         {
-            var managers = adapter.GetAll<Manager>();
-            var workers = adapter.GetAll<Worker>();
+            var managers = users.GetManagers();
+            var workers = users.GetWorkers();
 
             var result =
                 from manager in managers
@@ -48,36 +50,36 @@ namespace CourseApp.DataLayer.Services
 
             return result.First();
         }
-        public int GetSalary(int managerId)
+        public override int GetSalary(int managerId)
         {
-            var manager = adapter.GetAll<Manager>().First(x => x.ManagerId == managerId);
-            var managerWorker = adapter.GetAll<Worker>().First(x => x.WorkerId == manager.WorkerId);
+            var manager = users.GetManagers().First(x => x.ManagerId == managerId);
+            var managerWorker = users.GetWorkers().First(x => x.WorkerId == manager.WorkerId);
             int departamentId = GetDepartamentIdByManagerId(managerId);
-            
-            var contracts = adapter.GetAll<Contract>();
-            var workers = adapter.GetAll<Worker>();
-            var agents = adapter.GetAll<Agent>();
+
+            var contracts = adapter.GetAll<Classes.NoSQL.Contract>();
+            var workers = users.GetWorkers();
+            var agents = users.GetAgents();
 
             var result =
                (from contract in contracts
                 from agent in agents
                 from worker in workers
-                
+
                 where worker.WorkerId == agent.WorkerId
-                where contract.AgentId == agent.AgentId
+                where contract.Worker.Agent.AgentId == agent.AgentId
                 where worker.DepartamentId == departamentId
-                
+
                 select agent.AgentId).Distinct();
 
             return (int)(result.Select(x => agentService.GetSalary(x)).Sum() * 0.3 + managerWorker.MinSalary);
         }
-        public string GetFullInfoById(int managerId)
+        public override string GetFullInfoById(int managerId)
         {
-            var managers = adapter.GetAll<Manager>();
-            var workers = adapter.GetAll<Worker>();
-            var departaments = adapter.GetAll<Departament>();
+            var managers = users.GetManagers();
+            var workers = users.GetWorkers();
+            var departaments = _filials.GetDepartaments();
             var dTypes = adapter.GetAll<DType>();
-            var filials = adapter.GetAll<Filial>();
+            var filials = adapter.GetAll<Classes.NoSQL.Filial>();
 
             var result =
                 from manager in managers
@@ -104,9 +106,6 @@ namespace CourseApp.DataLayer.Services
 
             return result.First().ToString();
         }
-        public bool ContainsWorkerId(int workerId)
-        {
-            return adapter.GetAll<Manager>().Any(x => x.WorkerId == workerId);
-        }
+        public override bool ContainsWorkerId(int workerId) => users.GetManagers().Any(x => x.WorkerId == workerId);
     }
 }

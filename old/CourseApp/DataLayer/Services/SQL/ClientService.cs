@@ -13,7 +13,7 @@ namespace CourseApp.DataLayer.Services
         public ClientService(IAdapter adapter)
             : base(adapter) { }
 
-        public string GetFullInfoById(int clientId)
+        public virtual string GetFullInfoById(int clientId)
         {
             var clients = adapter.GetAll<Client>();
             var result =
@@ -29,11 +29,11 @@ namespace CourseApp.DataLayer.Services
 
             return result.First().ToString();
         }
-        public Client GetClientByUserId(int userId)
+        public virtual Client GetClientByUserId(int userId)
         {
             return adapter.GetAll<Client>().First(x => x.UserId == userId);
         }
-        public void Add(Client client)
+        public virtual void Add(Client client)
         {
             adapter.Add(client);
         }

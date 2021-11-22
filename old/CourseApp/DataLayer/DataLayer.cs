@@ -1,25 +1,20 @@
 ﻿using CourseApp.DataLayer.Adapters;
 using CourseApp.DataLayer.Services;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CourseApp.DataLayer
 {
     public class DataLayer
     {
-        public AgentService Agents{ get; }
-        public ClientService Clients { get; }
-        public ContractService Contracts { get; }
-        public DepartamentService Departaments { get; }
-        public DTypeService DTypes { get; }
-        public FilialService Filials { get; }
-        public ManagerService Managers { get; }
-        public ServiceService Services { get; }
-        public UserService Users { get; }
-        public WorkerService Workers { get; }
+        public AgentService Agents { get; set; }
+        public ClientService Clients { get; set; }
+        public ContractService Contracts { get; set; }
+        public DepartamentService Departaments { get; set; }
+        public DTypeService DTypes { get; set; }
+        public FilialService Filials { get; set; }
+        public ManagerService Managers { get; set; }
+        public ServiceService Services { get; set; }
+        public UserService Users { get; set; }
+        public WorkerService Workers { get; set; }
 
         public DataLayer(IAdapter adapter)
         {

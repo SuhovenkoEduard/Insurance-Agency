@@ -164,18 +164,22 @@
     <Compile Include="Accounts\ManagerWindow\ManagerWindow.xaml.cs">
       <DependentUpon>ManagerWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Classes\Agent.cs" />
-    <Compile Include="Classes\Client.cs" />
-    <Compile Include="Classes\Contract.cs" />
-    <Compile Include="Classes\Departament.cs" />
-    <Compile Include="Classes\DType.cs" />
-    <Compile Include="Classes\Filial.cs" />
-    <Compile Include="Classes\Manager.cs" />
-    <Compile Include="Classes\Role.cs" />
-    <Compile Include="Classes\Service.cs" />
-    <Compile Include="Classes\Status.cs" />
-    <Compile Include="Classes\User.cs" />
-    <Compile Include="Classes\Worker.cs" />
+    <Compile Include="Classes\NoSQL\Contract.cs" />
+    <Compile Include="Classes\NoSQL\Filial.cs" />
+    <Compile Include="Classes\NoSQL\User.cs" />
+    <Compile Include="Classes\NoSQL\Worker.cs" />
+    <Compile Include="Classes\SQL\Agent.cs" />
+    <Compile Include="Classes\SQL\Client.cs" />
+    <Compile Include="Classes\SQL\Contract.cs" />
+    <Compile Include="Classes\SQL\Departament.cs" />
+    <Compile Include="Classes\SQL\DType.cs" />
+    <Compile Include="Classes\SQL\Filial.cs" />
+    <Compile Include="Classes\SQL\Manager.cs" />
+    <Compile Include="Classes\SQL\Role.cs" />
+    <Compile Include="Classes\SQL\Service.cs" />
+    <Compile Include="Classes\SQL\Status.cs" />
+    <Compile Include="Classes\SQL\User.cs" />
+    <Compile Include="Classes\SQL\Worker.cs" />
     <Compile Include="CourseDBDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -187,17 +191,26 @@
     <Compile Include="DataLayer\Adapters\IAdapter.cs" />
     <Compile Include="DataLayer\Adapters\MongoAdapter.cs" />
     <Compile Include="DataLayer\DBs\MongoDB.cs" />
-    <Compile Include="DataLayer\Services\AgentService.cs" />
-    <Compile Include="DataLayer\Services\ClientService.cs" />
-    <Compile Include="DataLayer\Services\ContractService.cs" />
-    <Compile Include="DataLayer\Services\DepartamentService.cs" />
-    <Compile Include="DataLayer\Services\DTypeService.cs" />
-    <Compile Include="DataLayer\Services\FilialService.cs" />
-    <Compile Include="DataLayer\Services\ManagerService.cs" />
-    <Compile Include="DataLayer\Services\Service.cs" />
-    <Compile Include="DataLayer\Services\ServiceService.cs" />
-    <Compile Include="DataLayer\Services\UserService.cs" />
-    <Compile Include="DataLayer\Services\WorkerService.cs" />
+    <Compile Include="DataLayer\MongoLayer.cs" />
+    <Compile Include="DataLayer\Services\NoSQL\AgentSer2.cs" />
+    <Compile Include="DataLayer\Services\NoSQL\ClientSer2.cs" />
+    <Compile Include="DataLayer\Services\NoSQL\ContractSer2.cs" />
+    <Compile Include="DataLayer\Services\NoSQL\DepartamentSer2.cs" />
+    <Compile Include="DataLayer\Services\NoSQL\FilialSer2.cs" />
+    <Compile Include="DataLayer\Services\NoSQL\ManagerSer2.cs" />
+    <Compile Include="DataLayer\Services\NoSQL\UserSer2.cs" />
+    <Compile Include="DataLayer\Services\NoSQL\WorkerSer2.cs" />
+    <Compile Include="DataLayer\Services\SQL\AgentService.cs" />
+    <Compile Include="DataLayer\Services\SQL\ClientService.cs" />
+    <Compile Include="DataLayer\Services\SQL\ContractService.cs" />
+    <Compile Include="DataLayer\Services\SQL\DepartamentService.cs" />
+    <Compile Include="DataLayer\Services\SQL\DTypeService.cs" />
+    <Compile Include="DataLayer\Services\SQL\FilialService.cs" />
+    <Compile Include="DataLayer\Services\SQL\ManagerService.cs" />
+    <Compile Include="DataLayer\Services\SQL\Service.cs" />
+    <Compile Include="DataLayer\Services\SQL\ServiceService.cs" />
+    <Compile Include="DataLayer\Services\SQL\UserService.cs" />
+    <Compile Include="DataLayer\Services\SQL\WorkerService.cs" />
     <Page Include="Accounts\AgentWindow\AgentWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -306,6 +319,7 @@
     <Content Include="Core\Compression\Zstandard\lib\win\libzstd.dll" />
     <Content Include="mongocrypt.dll" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="packages\MaterialDesignThemes.4.0.0\build\MaterialDesignThemes.targets" Condition="Exists('packages\MaterialDesignThemes.4.0.0\build\MaterialDesignThemes.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

@@ -13,7 +13,7 @@ namespace CourseApp.DataLayer.Services
         public AgentService(IAdapter adapter) 
             : base(adapter) { }
 
-        public int GetDepartamentIdByAgentId(int agentId)
+        public virtual int GetDepartamentIdByAgentId(int agentId)
         {
             var workers = adapter.GetAll<Worker>();
             var agents = adapter.GetAll<Agent>();
@@ -28,7 +28,7 @@ namespace CourseApp.DataLayer.Services
 
             return result.First();
         }
-        public Agent GetAgentByUserId(int userId)
+        public virtual Agent GetAgentByUserId(int userId)
         {
             var agents = adapter.GetAll<Agent>();
             var workers = adapter.GetAll<Worker>();
@@ -42,7 +42,7 @@ namespace CourseApp.DataLayer.Services
 
             return result.First();
         }
-        public string GetFullNameById(int agentId)
+        public virtual string GetFullNameById(int agentId)
         {
             var agents = adapter.GetAll<Agent>();
             var workers = adapter.GetAll<Worker>();
@@ -56,7 +56,7 @@ namespace CourseApp.DataLayer.Services
 
             return result.First();
         }
-        public string GetFullInfoById(int agentId)
+        public virtual string GetFullInfoById(int agentId)
         {
             var agents = adapter.GetAll<Agent>();
             var workers = adapter.GetAll<Worker>();
@@ -89,11 +89,11 @@ namespace CourseApp.DataLayer.Services
 
             return result.First().ToString();
         }
-        public bool ContainsWorkerId(int workerId)
+        public virtual bool ContainsWorkerId(int workerId)
         {
             return adapter.GetAll<Agent>().Any(x => x.WorkerId == workerId);
         }
-        public int GetSalary(int agentId)
+        public virtual int GetSalary(int agentId)
         {
             var agent = adapter.GetAll<Agent>().First(x => x.AgentId == agentId);
             var worker = adapter.GetAll<Worker>().First(x => x.WorkerId == agent.WorkerId);
@@ -106,7 +106,7 @@ namespace CourseApp.DataLayer.Services
 
             return result.Sum() + worker.MinSalary;
         }
-        public IEnumerable<string> GetFullNamesByDepartamentId(int departamentId)
+        public virtual IEnumerable<string> GetFullNamesByDepartamentId(int departamentId)
         {
             var agents = adapter.GetAll<Agent>();
             var workers = adapter.GetAll<Worker>();
@@ -120,7 +120,7 @@ namespace CourseApp.DataLayer.Services
 
             return result;
         }
-        public Agent GetAgentByFullnameAndDepartamentId(string fullName, int departamentId)
+        public virtual Agent GetAgentByFullnameAndDepartamentId(string fullName, int departamentId)
         {
             var agents = adapter.GetAll<Agent>();
             var workers = adapter.GetAll<Worker>();

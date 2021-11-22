@@ -12,6 +12,8 @@ namespace CourseApp.DataLayer.Services
     {
         protected AgentService agentService;
         protected WorkerService workerService;
+        public UserService(IAdapter adapter) 
+            : base(adapter) { }
         public UserService(IAdapter adapter, AgentService agentService, WorkerService workerService)
             : base(adapter) 
         {
@@ -19,19 +21,19 @@ namespace CourseApp.DataLayer.Services
             this.workerService = workerService;
         }
 
-        public bool Contains(User user)
+        public virtual bool Contains(User user)
         {
             return adapter.GetAll<User>().Any(x => x.Login == user.Login && x.Password == user.Password);
         }
-        public bool ContainsLogin(string login)
+        public virtual bool ContainsLogin(string login)
         {
             return adapter.GetAll<User>().Any(x => x.Login == login);
         }
-        public int GetId(User user)
+        public virtual int GetId(User user)
         {
             return adapter.GetAll<User>().First(x => x.Login == user.Login && x.Password == user.Password).UserId;
         }
-        public Role GetRole(int userId)
+        public virtual Role GetRole(int userId)
         {
             if (workerService.ContainsUserId(userId)) // __worker
             {
@@ -45,6 +47,6 @@ namespace CourseApp.DataLayer.Services
                 return Role.Client;
             }
         }
-        public void Add(User user) => adapter.Add(user);
+        public virtual void Add(User user) => adapter.Add(user);
     }
 }
