@@ -29,5 +29,11 @@ collections = clientAdder.add(collections, funcs);
 collections = workerAdder.add(collections, funcs);
 collections = serviceAdder.add(collections, funcs);
 
+// fs
+collections.forEach(collection => {
+  fs.writeFileSync(`./out/collections/${collection.collectionName}.json`,
+    JSON.stringify(collection.data, null, '  '));
+});
+
 fs.writeFileSync(outputPath, JSON.stringify(collections, null, '  '));
 console.log("Updated successful!");

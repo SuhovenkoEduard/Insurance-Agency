@@ -1,0 +1,44 @@
+[
+  {
+    "ServiceId": 2,
+    "Title": "ОСАГО",
+    "DTypeId": 5,
+    "Cost": 100
+  },
+  {
+    "ServiceId": 11,
+    "Title": "Здоровье (НС, ДМС, клещ)",
+    "DTypeId": 3,
+    "Cost": 110
+  },
+  {
+    "ServiceId": 3,
+    "Title": "Гринкарта",
+    "DTypeId": 1,
+    "Cost": 300
+  },
+  {
+    "ServiceId": 1,
+    "Title": "Ипотечное страхование",
+    "DTypeId": 4,
+    "Cost": 299
+  },
+  {
+    "ServiceId": 13,
+    "Title": "КАСКО",
+    "DTypeId": 5,
+    "Cost": 415
+  },
+  {
+    "ServiceId": 12,
+    "Title": "Имущество",
+    "DTypeId": 2,
+    "Cost": 213
+  },
+  {
+    "ServiceId": 14,
+    "Title": "Путешествия",
+    "DTypeId": 1,
+    "Cost": 842
+  }
+]

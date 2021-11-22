@@ -1,0 +1,63 @@
+[
+  {
+    "FilialId": 3,
+    "NumberOfWorkers": 171,
+    "City": "Минск",
+    "DateOfCreation": "11:08:2016",
+    "Departments": [
+      {
+        "DepartamentId": 4,
+        "DTypeID": 4,
+        "FilialId": 3
+      },
+      {
+        "DepartamentId": 3,
+        "DTypeID": 3,
+        "FilialId": 3
+      },
+      {
+        "DepartamentId": 1,
+        "DTypeID": 1,
+        "FilialId": 3
+      },
+      {
+        "DepartamentId": 2,
+        "DTypeID": 2,
+        "FilialId": 3
+      },
+      {
+        "DepartamentId": 6,
+        "DTypeID": 5,
+        "FilialId": 3
+      }
+    ]
+  },
+  {
+    "FilialId": 4,
+    "NumberOfWorkers": 222,
+    "City": "Гомель",
+    "DateOfCreation": "12:03:2019",
+    "Departments": [
+      {
+        "DepartamentId": 8,
+        "DTypeID": 2,
+        "FilialId": 4
+      },
+      {
+        "DepartamentId": 9,
+        "DTypeID": 3,
+        "FilialId": 4
+      },
+      {
+        "DepartamentId": 7,
+        "DTypeID": 1,
+        "FilialId": 4
+      },
+      {
+        "DepartamentId": 10,
+        "DTypeID": 4,
+        "FilialId": 4
+      }
+    ]
+  }
+]
