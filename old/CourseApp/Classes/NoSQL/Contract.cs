@@ -10,19 +10,19 @@ namespace CourseApp.Classes.NoSQL
     {
 		public int ContractId { get; set; }
 		public string DateOfConclusion { get; set; }
-		public int ServiceId { get; set; }
-		public Client Client { get; set; }
-		public Worker Worker { get; set; }
 		public int Cost { get; set; }
 		public int InsurancePeriod { get; set; }
 		public string Comment { get; set; }
 		public Status Status { get; set; }
+		public Client Client { get; set; }
+		public Worker Worker { get; set; }
+		public Service Service { get; set; }
 
 		public Contract() { }
 
 		public Contract(
 			string dateOfConclusion, 
-			int serviceId, 
+			Service service, 
 			Client client, 
 			Worker worker, 
 			int cost, 
@@ -31,7 +31,7 @@ namespace CourseApp.Classes.NoSQL
 			Status status)
 		{
 			DateOfConclusion = dateOfConclusion;
-			ServiceId = serviceId;
+			Service = service;
 			Client = client;
 			Worker = worker;
 			Cost = cost;
@@ -44,7 +44,7 @@ namespace CourseApp.Classes.NoSQL
 		{
 			return ContractId + " " +
 				DateOfConclusion + " " +
-				ServiceId + " " +
+				Service + " " +
 				Client + " " +
 				Worker + " " +
 				Cost + " " +
@@ -55,15 +55,17 @@ namespace CourseApp.Classes.NoSQL
 
 		public Classes.Contract ToSQLContract()
         {
-			return new Classes.Contract(
+			var contract = new Classes.Contract(
 					this.DateOfConclusion,
-					this.ServiceId,
+					this.Service.ServiceId,
 					this.Client.ClientId,
 					this.Worker.Agent.AgentId,
 					this.Cost,
 					this.InsurancePeriod,
 					this.Comment,
 					this.Status.StatusId);
+			contract.ContractId = this.ContractId;
+			return contract;
 		}
 	}
 }

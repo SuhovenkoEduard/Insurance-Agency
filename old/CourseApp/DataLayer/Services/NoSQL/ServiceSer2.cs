@@ -6,27 +6,33 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CourseApp.DataLayer.Services
+namespace CourseApp.DataLayer.Services.NoSQL
 {
-    public class ServiceService : Service
+    public class ServiceSer2 : ServiceService
     {
-        public ServiceService(IAdapter adapter)
-            : base(adapter) { }
+        private UserSer2 users;
+        private FilialSer2 _filials;
+        public ServiceSer2(IAdapter adapter, UserSer2 users, FilialSer2 filials)
+            : base(adapter) 
+        {
+            this.users = users;
+            this._filials = filials;
+        }
 
-        public virtual List<Classes.Service> GetServices()
+        public override List<Classes.Service> GetServices()
         {
             return adapter.GetAll<Classes.Service>()
-                .OrderBy(x => x.ServiceId).ToList();        
+                .OrderBy(x => x.ServiceId).ToList();
         }
-        public virtual List<string> GetTitles()
+        public override List<string> GetTitles()
         {
             return adapter.GetAll<Classes.Service>().Select(x => x.Title).ToList();
         }
-        public virtual IEnumerable<Classes.Service> GetServicesByAgentId(int agentId)
+        public override IEnumerable<Classes.Service> GetServicesByAgentId(int agentId)
         {
-            var agents = adapter.GetAll<Agent>();
-            var workers = adapter.GetAll<Worker>();
-            var departaments = adapter.GetAll<Departament>();
+            var agents = users.GetAgents();
+            var workers = users.GetWorkers();
+            var departaments = _filials.GetDepartaments();
             var dTypes = adapter.GetAll<DType>();
             var services = adapter.GetAll<Classes.Service>();
 
@@ -47,14 +53,14 @@ namespace CourseApp.DataLayer.Services
 
             return result;
         }
-        public virtual void Update(Classes.Service service) => adapter.Update(service);
-        public virtual IEnumerable<string> GetNamesByDtypeId(int dTypeId)
+        public override void Update(Classes.Service service) => adapter.Update(service);
+        public override IEnumerable<string> GetNamesByDtypeId(int dTypeId)
         {
             return adapter.GetAll<Classes.Service>()
                 .Where(x => x.DTypeId == dTypeId)
                 .Select(x => x.Title);
         }
-        public virtual Classes.Service GetServiceByTitleAndDTypeId(string title, int dTypeId)
+        public override Classes.Service GetServiceByTitleAndDTypeId(string title, int dTypeId)
         {
             return adapter.GetAll<Classes.Service>()
                 .First(x => x.Title == title && x.DTypeId == dTypeId);

@@ -10,8 +10,8 @@ namespace CourseApp.DataLayer.Services.NoSQL
 {
     public class AgentSer2 : AgentService
     {
-        protected UserSer2 users;
-        protected FilialSer2 _filials;
+        private UserSer2 users;
+        private FilialSer2 _filials;
         public AgentSer2(IAdapter adapter, UserSer2 users, FilialSer2 filials)
             : base(adapter)
         {

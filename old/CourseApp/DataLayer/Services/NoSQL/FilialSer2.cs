@@ -18,7 +18,7 @@ namespace CourseApp.DataLayer.Services.NoSQL
         {
             return adapter.GetAll<Classes.NoSQL.Filial>()
                 .Where(x => x.City == city)
-                .Select(filial => new Filial(filial.NumberOfWorkers, filial.City, filial.DateOfCreation))
+                .Select(filial => filial.ToSQLFilial())
                 .First();
         }
 

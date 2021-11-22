@@ -7,13 +7,15 @@ namespace CourseApp.DataLayer.Services.NoSQL
 {
     public class ContractSer2 : ContractService
     {
-        public UserSer2 users;
-        public FilialSer2 filials;
-        public ContractSer2(IAdapter adapter, UserSer2 users, FilialSer2 filials)
+        private UserSer2 _users;
+        private FilialSer2 _filials;
+        private ManagerSer2 _managers;
+        public ContractSer2(IAdapter adapter, UserSer2 users, FilialSer2 filials, ManagerSer2 managers)
             : base(adapter) 
         {
-            this.users = users;
-            this.filials = filials;
+            this._users = users;
+            this._filials = filials;
+            this._managers = managers;
         } 
 
         // [-]
@@ -38,8 +40,8 @@ namespace CourseApp.DataLayer.Services.NoSQL
         public override IEnumerable<object> GetFullInfoByClientId(int clientId)
         {
             var contracts = adapter.GetAll<Classes.NoSQL.Contract>();
-            var agents = users.GetAgents();
-            var workers = users.GetWorkers();
+            var agents = _users.GetAgents();
+            var workers = _users.GetWorkers();
             var services = adapter.GetAll<Classes.Service>();
             var statuses = adapter.GetAll<Status>();
 
@@ -53,7 +55,7 @@ namespace CourseApp.DataLayer.Services.NoSQL
                 where agent.WorkerId == worker.WorkerId
 
                 where contract.Worker.Agent.AgentId == agent.AgentId
-                where contract.ServiceId == service.ServiceId
+                where contract.Service.ServiceId == service.ServiceId
                 where contract.Status.StatusId == status.StatusId
 
                 where contract.Client.ClientId == clientId
@@ -90,7 +92,7 @@ namespace CourseApp.DataLayer.Services.NoSQL
         public override IEnumerable<object> GetFullInfoByAgentId(int agentId)
         {
             var contracts = adapter.GetAll<Classes.NoSQL.Contract>();
-            var clients = users.GetClients();
+            var clients = _users.GetClients();
             var services = adapter.GetAll<Classes.Service>();
             var statuses = adapter.GetAll<Status>();
 
@@ -103,7 +105,7 @@ namespace CourseApp.DataLayer.Services.NoSQL
                 where contract.Worker.Agent.AgentId == agentId
 
                 where contract.Client.ClientId == client.ClientId
-                where contract.ServiceId == service.ServiceId
+                where contract.Service.ServiceId == service.ServiceId
                 where contract.Status.StatusId == status.StatusId
 
                 select new
@@ -140,15 +142,15 @@ namespace CourseApp.DataLayer.Services.NoSQL
         public override IEnumerable<object> GetReportByManagerId(int managerId)
         {
             var contracts = adapter.GetAll<Classes.NoSQL.Contract>();
-            var managers = users.GetManagers();
-            var agents = users.GetAgents();
-            var workers = users.GetWorkers();
-            var clients = users.GetClients();
+            var managers = _users.GetManagers();
+            var agents = _users.GetAgents();
+            var workers = _users.GetWorkers();
+            var clients = _users.GetClients();
             var services = adapter.GetAll<Classes.Service>();
-            var departaments = filials.GetDepartaments();
+            var departaments = _filials.GetDepartaments();
             var dTypes = adapter.GetAll<DType>();
 
-            var departamentId = managerService.GetDepartamentIdByManagerId(managerId);
+            var departamentId = _managers.GetDepartamentIdByManagerId(managerId);
 
             var agentInfos =
                 from agent in agents

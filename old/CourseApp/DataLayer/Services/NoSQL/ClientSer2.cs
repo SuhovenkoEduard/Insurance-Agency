@@ -10,7 +10,7 @@ namespace CourseApp.DataLayer.Services.NoSQL
 {
     public class ClientSer2 : ClientService
     {
-        protected UserSer2 users;
+        private UserSer2 users;
         public ClientSer2(IAdapter adapter, UserSer2 users)
             : base(adapter) 
         {

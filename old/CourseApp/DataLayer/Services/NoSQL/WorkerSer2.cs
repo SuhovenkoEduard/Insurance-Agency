@@ -10,7 +10,7 @@ namespace CourseApp.DataLayer.Services.NoSQL
 {
     public class WorkerSer2 : WorkerService
     {
-        protected UserSer2 users;
+        private UserSer2 users;
         public WorkerSer2(IAdapter adapter, UserSer2 users) 
             : base(adapter) 
         {
@@ -20,10 +20,11 @@ namespace CourseApp.DataLayer.Services.NoSQL
         public override void Update(Worker worker) 
         {
             var workers = users.GetWorkers();
-            var cur_worker = workers.Find(w => w.WorkerId == worker.WorkerId);
+            var cur_user = adapter.GetAll<Classes.NoSQL.User>().Where(user => user.Worker != null).First(user => user.Worker.WorkerId == worker.WorkerId);
+            var cur_worker = cur_user.Worker;
             cur_worker.FullName = worker.FullName;
             cur_worker.MinSalary = worker.MinSalary;
-            adapter.Update(cur_worker);
+            adapter.Update(cur_user);
         }
         public override List<Worker> GetWorkersByDepartamentId(int departamentId)
         {
@@ -31,7 +32,7 @@ namespace CourseApp.DataLayer.Services.NoSQL
             var result =
                 from worker in workers
                 where worker.DepartamentId == departamentId
-                select new Worker(worker.FullName, worker.MinSalary, worker.UserId, worker.DepartamentId);
+                select worker.ToSQLWorker();
             return result.ToList();
         }
         public override bool ContainsUserId(int userId) => users.GetWorkers().Any(x => x.UserId == userId);

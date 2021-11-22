@@ -38,8 +38,8 @@ namespace CourseApp
             //User userClient = new User("web", "qwerty");
             //signInWindow.SignIn(userClient);
 
-            User userAgent = new User("local", "princess");
-            signInWindow.SignIn(userAgent);
+            //User userAgent = new User("local", "princess");
+            //signInWindow.SignIn(userAgent);
 
             //User userManager = new User("admin", "admin");
             //signInWindow.SignIn(userManager);

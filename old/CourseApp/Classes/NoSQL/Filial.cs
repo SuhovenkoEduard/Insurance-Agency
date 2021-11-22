@@ -36,5 +36,12 @@ namespace CourseApp.Classes.NoSQL
 				DateOfCreation + " " + 
 				Departments;
 		}
+
+		public Classes.Filial ToSQLFilial()
+        {
+			var filial = new Classes.Filial(NumberOfWorkers, City, DateOfCreation);
+			filial.FilialId = FilialId;
+			return filial;
+        }
 	}
 }

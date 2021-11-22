@@ -10,7 +10,7 @@ namespace CourseApp.DataLayer.Services.NoSQL
 {
     public class DepartamentSer2 : DepartamentService
     {
-        protected FilialSer2 filials;
+        private FilialSer2 filials;
         public DepartamentSer2(IAdapter adapter, FilialSer2 filials)
             : base(adapter) 
         {

@@ -10,7 +10,7 @@ namespace CourseApp.DataLayer.Services
 {
     public class ManagerService : Service
     {
-        protected AgentService agentService;
+        private AgentService agentService;
         public ManagerService(IAdapter adapter, AgentService agentService)
             : base(adapter) 
         {

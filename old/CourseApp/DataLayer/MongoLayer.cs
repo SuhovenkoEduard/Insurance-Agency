@@ -20,7 +20,12 @@ namespace CourseApp.DataLayer
             Clients = new ClientSer2(adapter, (UserSer2) Users);
             Workers = new WorkerSer2(adapter, (UserSer2) Users);
             Agents = new AgentSer2(adapter, (UserSer2) Users, (FilialSer2) Filials);
-            Managers = new ManagerSer2(adapter, (UserSer2) Users, (FilialSer2) Filials);
+            Managers = new ManagerSer2(adapter, (UserSer2) Users, (FilialSer2) Filials, (AgentSer2) Agents);
+
+            Contracts = new ContractSer2(adapter, (UserSer2)Users, (FilialSer2)Filials, (ManagerSer2) Managers); // [-]
+
+            Services = new ServiceSer2(adapter, (UserSer2)Users, (FilialSer2) Filials);
+
         }
     }
 }

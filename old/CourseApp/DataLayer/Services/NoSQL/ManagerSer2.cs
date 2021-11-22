@@ -10,13 +10,15 @@ namespace CourseApp.DataLayer.Services.NoSQL
 {
     public class ManagerSer2 : ManagerService
     {
-        protected UserSer2 users;
-        protected FilialSer2 _filials;
-        public ManagerSer2(IAdapter adapter, UserSer2 users, FilialSer2 filials)
+        private UserSer2 users;
+        private FilialSer2 _filials;
+        private AgentSer2 _agents;
+        public ManagerSer2(IAdapter adapter, UserSer2 users, FilialSer2 filials, AgentSer2 agents)
             : base(adapter) 
         {
             this.users = users;
             this._filials = filials;
+            this._agents = agents;
         }
 
         public override int GetDepartamentIdByManagerId(int managerId)
@@ -71,7 +73,7 @@ namespace CourseApp.DataLayer.Services.NoSQL
 
                 select agent.AgentId).Distinct();
 
-            return (int)(result.Select(x => agentService.GetSalary(x)).Sum() * 0.3 + managerWorker.MinSalary);
+            return (int)(result.Select(x => _agents.GetSalary(x)).Sum() * 0.3 + managerWorker.MinSalary);
         }
         public override string GetFullInfoById(int managerId)
         {

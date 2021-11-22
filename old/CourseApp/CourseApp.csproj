@@ -198,6 +198,7 @@
     <Compile Include="DataLayer\Services\NoSQL\DepartamentSer2.cs" />
     <Compile Include="DataLayer\Services\NoSQL\FilialSer2.cs" />
     <Compile Include="DataLayer\Services\NoSQL\ManagerSer2.cs" />
+    <Compile Include="DataLayer\Services\NoSQL\ServiceSer2.cs" />
     <Compile Include="DataLayer\Services\NoSQL\UserSer2.cs" />
     <Compile Include="DataLayer\Services\NoSQL\WorkerSer2.cs" />
     <Compile Include="DataLayer\Services\SQL\AgentService.cs" />
@@ -314,9 +315,6 @@
     <Resource Include="Accounts\ManagerWindow\ManagerImage.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Core\Compression\Snappy\lib\win\snappy32.dll" />
-    <Content Include="Core\Compression\Snappy\lib\win\snappy64.dll" />
-    <Content Include="Core\Compression\Zstandard\lib\win\libzstd.dll" />
     <Content Include="mongocrypt.dll" />
   </ItemGroup>
   <ItemGroup />

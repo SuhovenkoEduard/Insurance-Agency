@@ -44,5 +44,12 @@ namespace CourseApp.Classes.NoSQL
 				Agent + " " + 
 				Manager;
 		}
+
+		public Classes.Worker ToSQLWorker()
+        {
+			var worker = new Classes.Worker(FullName, MinSalary, UserId, DepartamentId);
+			worker.WorkerId = WorkerId;
+			return worker;
+        }
 	}
 }

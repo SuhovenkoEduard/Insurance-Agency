@@ -10,8 +10,8 @@ namespace CourseApp.DataLayer.Services
 {
     public class UserService : Service
     {
-        protected AgentService agentService;
-        protected WorkerService workerService;
+        private AgentService agentService;
+        private WorkerService workerService;
         public UserService(IAdapter adapter) 
             : base(adapter) { }
         public UserService(IAdapter adapter, AgentService agentService, WorkerService workerService)
