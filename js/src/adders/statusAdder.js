@@ -20,5 +20,5 @@ const add = (collections, funcs) => {
 export let statusAdder = {add: add};
 
 /*
-  Status -> Order
+  Status -> Contract
 */

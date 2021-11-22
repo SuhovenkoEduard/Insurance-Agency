@@ -1,0 +1,11 @@
+- Чистые справочники:
+Status
+DType
+User
+
+- Грязные справочники:
+Service
+Filial
+
+- Сущности:
+Contract

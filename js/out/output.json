@@ -5,211 +5,586 @@
       {
         "ContractId": 49,
         "DateOfConclusion": "09:10:2001",
-        "ServiceId": 1,
-        "ClientId": 2,
-        "AgentId": 4,
         "Cost": 230,
         "InsurancePeriod": 2,
         "Comment": "-",
         "Status": {
           "StatusId": 1,
           "Title": "Подтверждён"
+        },
+        "Client": {
+          "ClientId": 2,
+          "PhoneNumber": "375298989833",
+          "FullName": "Моисеев Григорий Еремеевич",
+          "Adress": "Давыдовская улица",
+          "UserId": 10
+        },
+        "Worker": {
+          "WorkerId": 85,
+          "FullName": "Агафонов Исаак Лаврентьевич",
+          "MinSalary": 300,
+          "UserId": 17,
+          "DepartamentId": 2,
+          "Agent": {
+            "AgentId": 4,
+            "WorkerId": 85,
+            "PersonalData": "профи"
+          }
+        },
+        "Service": {
+          "ServiceId": 1,
+          "Title": "Ипотечное страхование",
+          "Cost": 299,
+          "DType": {
+            "DTypeId": 4,
+            "Title": "Страхование ответственности"
+          }
         }
       },
       {
         "ContractId": 41,
         "DateOfConclusion": "27:08:2005",
-        "ServiceId": 3,
-        "ClientId": 9,
-        "AgentId": 4,
         "Cost": 100,
         "InsurancePeriod": 5,
         "Comment": "-",
         "Status": {
           "StatusId": 1,
           "Title": "Подтверждён"
+        },
+        "Client": {
+          "ClientId": 9,
+          "PhoneNumber": "375292073833",
+          "FullName": "Савельева Илона Георгиевна",
+          "Adress": "Докутович улица",
+          "UserId": 5
+        },
+        "Worker": {
+          "WorkerId": 85,
+          "FullName": "Агафонов Исаак Лаврентьевич",
+          "MinSalary": 300,
+          "UserId": 17,
+          "DepartamentId": 2,
+          "Agent": {
+            "AgentId": 4,
+            "WorkerId": 85,
+            "PersonalData": "профи"
+          }
+        },
+        "Service": {
+          "ServiceId": 3,
+          "Title": "Гринкарта",
+          "Cost": 300,
+          "DType": {
+            "DTypeId": 1,
+            "Title": "Личного страхования"
+          }
         }
       },
       {
         "ContractId": 43,
         "DateOfConclusion": "01:08:2017",
-        "ServiceId": 2,
-        "ClientId": 4,
-        "AgentId": 3,
         "Cost": 400,
         "InsurancePeriod": 3,
         "Comment": "-",
         "Status": {
           "StatusId": 3,
           "Title": "Отклонён"
+        },
+        "Client": {
+          "ClientId": 4,
+          "PhoneNumber": "375298596602",
+          "FullName": "Мухин Гурий Яковович",
+          "Adress": "Дворникова улица",
+          "UserId": 2
+        },
+        "Worker": {
+          "WorkerId": 87,
+          "FullName": "Хохлов Борис Авдеевич",
+          "MinSalary": 200,
+          "UserId": 7,
+          "DepartamentId": 3,
+          "Agent": {
+            "AgentId": 3,
+            "WorkerId": 87,
+            "PersonalData": "альфасамец"
+          }
+        },
+        "Service": {
+          "ServiceId": 2,
+          "Title": "ОСАГО",
+          "Cost": 100,
+          "DType": {
+            "DTypeId": 5,
+            "Title": "Страхование автомобилей"
+          }
         }
       },
       {
         "ContractId": 50,
         "DateOfConclusion": "04:09:2015",
-        "ServiceId": 3,
-        "ClientId": 8,
-        "AgentId": 3,
         "Cost": 580,
         "InsurancePeriod": 4,
         "Comment": "-",
         "Status": {
           "StatusId": 1,
           "Title": "Подтверждён"
+        },
+        "Client": {
+          "ClientId": 8,
+          "PhoneNumber": "375629872340",
+          "FullName": "Шестакова Глория Евсеевна",
+          "Adress": "Днепропетровский переулок",
+          "UserId": 3
+        },
+        "Worker": {
+          "WorkerId": 87,
+          "FullName": "Хохлов Борис Авдеевич",
+          "MinSalary": 200,
+          "UserId": 7,
+          "DepartamentId": 3,
+          "Agent": {
+            "AgentId": 3,
+            "WorkerId": 87,
+            "PersonalData": "альфасамец"
+          }
+        },
+        "Service": {
+          "ServiceId": 3,
+          "Title": "Гринкарта",
+          "Cost": 300,
+          "DType": {
+            "DTypeId": 1,
+            "Title": "Личного страхования"
+          }
         }
       },
       {
         "ContractId": 45,
         "DateOfConclusion": "21:10:2007",
-        "ServiceId": 2,
-        "ClientId": 2,
-        "AgentId": 3,
         "Cost": 750,
         "InsurancePeriod": 2,
         "Comment": "-",
         "Status": {
           "StatusId": 2,
           "Title": "В обработке"
+        },
+        "Client": {
+          "ClientId": 2,
+          "PhoneNumber": "375298989833",
+          "FullName": "Моисеев Григорий Еремеевич",
+          "Adress": "Давыдовская улица",
+          "UserId": 10
+        },
+        "Worker": {
+          "WorkerId": 87,
+          "FullName": "Хохлов Борис Авдеевич",
+          "MinSalary": 200,
+          "UserId": 7,
+          "DepartamentId": 3,
+          "Agent": {
+            "AgentId": 3,
+            "WorkerId": 87,
+            "PersonalData": "альфасамец"
+          }
+        },
+        "Service": {
+          "ServiceId": 2,
+          "Title": "ОСАГО",
+          "Cost": 100,
+          "DType": {
+            "DTypeId": 5,
+            "Title": "Страхование автомобилей"
+          }
         }
       },
       {
         "ContractId": 61,
         "DateOfConclusion": "28:10:2008",
-        "ServiceId": 12,
-        "ClientId": 5,
-        "AgentId": 9,
         "Cost": 426,
         "InsurancePeriod": 2,
         "Comment": "-",
         "Status": {
           "StatusId": 2,
           "Title": "В обработке"
+        },
+        "Client": {
+          "ClientId": 5,
+          "PhoneNumber": "375295235085",
+          "FullName": "Куликов Агафон Николаевич",
+          "Adress": "Джураева улица",
+          "UserId": 20
+        },
+        "Worker": {
+          "WorkerId": 86,
+          "FullName": "Князев Корнелий Богданович",
+          "MinSalary": 100,
+          "UserId": 1,
+          "DepartamentId": 2,
+          "Agent": {
+            "AgentId": 9,
+            "WorkerId": 86,
+            "PersonalData": "новичок"
+          }
+        },
+        "Service": {
+          "ServiceId": 12,
+          "Title": "Имущество",
+          "Cost": 213,
+          "DType": {
+            "DTypeId": 2,
+            "Title": "Имущественного страхования"
+          }
         }
       },
       {
         "ContractId": 58,
         "DateOfConclusion": "15:10:2020",
-        "ServiceId": 11,
-        "ClientId": 5,
-        "AgentId": 3,
         "Cost": 550,
         "InsurancePeriod": 5,
         "Comment": "-",
         "Status": {
           "StatusId": 2,
           "Title": "В обработке"
+        },
+        "Client": {
+          "ClientId": 5,
+          "PhoneNumber": "375295235085",
+          "FullName": "Куликов Агафон Николаевич",
+          "Adress": "Джураева улица",
+          "UserId": 20
+        },
+        "Worker": {
+          "WorkerId": 87,
+          "FullName": "Хохлов Борис Авдеевич",
+          "MinSalary": 200,
+          "UserId": 7,
+          "DepartamentId": 3,
+          "Agent": {
+            "AgentId": 3,
+            "WorkerId": 87,
+            "PersonalData": "альфасамец"
+          }
+        },
+        "Service": {
+          "ServiceId": 11,
+          "Title": "Здоровье (НС, ДМС, клещ)",
+          "Cost": 110,
+          "DType": {
+            "DTypeId": 3,
+            "Title": "Страхование жизни"
+          }
         }
       },
       {
         "ContractId": 59,
         "DateOfConclusion": "24:05:2012",
-        "ServiceId": 12,
-        "ClientId": 5,
-        "AgentId": 22,
         "Cost": 213,
         "InsurancePeriod": 1,
         "Comment": "Бог есть.",
         "Status": {
           "StatusId": 2,
           "Title": "В обработке"
+        },
+        "Client": {
+          "ClientId": 5,
+          "PhoneNumber": "375295235085",
+          "FullName": "Куликов Агафон Николаевич",
+          "Adress": "Джураева улица",
+          "UserId": 20
+        },
+        "Worker": {
+          "WorkerId": 109,
+          "FullName": "Шилова Олеся Якуновна",
+          "MinSalary": 205,
+          "UserId": 43,
+          "DepartamentId": 8,
+          "Agent": {
+            "AgentId": 22,
+            "WorkerId": 109,
+            "PersonalData": "новичок"
+          }
+        },
+        "Service": {
+          "ServiceId": 12,
+          "Title": "Имущество",
+          "Cost": 213,
+          "DType": {
+            "DTypeId": 2,
+            "Title": "Имущественного страхования"
+          }
         }
       },
       {
         "ContractId": 47,
         "DateOfConclusion": "29:05:2009",
-        "ServiceId": 3,
-        "ClientId": 9,
-        "AgentId": 9,
         "Cost": 100,
         "InsurancePeriod": 5,
         "Comment": "-",
         "Status": {
           "StatusId": 1,
           "Title": "Подтверждён"
+        },
+        "Client": {
+          "ClientId": 9,
+          "PhoneNumber": "375292073833",
+          "FullName": "Савельева Илона Георгиевна",
+          "Adress": "Докутович улица",
+          "UserId": 5
+        },
+        "Worker": {
+          "WorkerId": 86,
+          "FullName": "Князев Корнелий Богданович",
+          "MinSalary": 100,
+          "UserId": 1,
+          "DepartamentId": 2,
+          "Agent": {
+            "AgentId": 9,
+            "WorkerId": 86,
+            "PersonalData": "новичок"
+          }
+        },
+        "Service": {
+          "ServiceId": 3,
+          "Title": "Гринкарта",
+          "Cost": 300,
+          "DType": {
+            "DTypeId": 1,
+            "Title": "Личного страхования"
+          }
         }
       },
       {
         "ContractId": 44,
         "DateOfConclusion": "27:06:2008",
-        "ServiceId": 2,
-        "ClientId": 2,
-        "AgentId": 11,
         "Cost": 250,
         "InsurancePeriod": 5,
         "Comment": "-",
         "Status": {
           "StatusId": 1,
           "Title": "Подтверждён"
+        },
+        "Client": {
+          "ClientId": 2,
+          "PhoneNumber": "375298989833",
+          "FullName": "Моисеев Григорий Еремеевич",
+          "Adress": "Давыдовская улица",
+          "UserId": 10
+        },
+        "Worker": {
+          "WorkerId": 89,
+          "FullName": "Самойлов Мечислав Иванович",
+          "MinSalary": 115,
+          "UserId": 15,
+          "DepartamentId": 4,
+          "Agent": {
+            "AgentId": 11,
+            "WorkerId": 89,
+            "PersonalData": "мастер"
+          }
+        },
+        "Service": {
+          "ServiceId": 2,
+          "Title": "ОСАГО",
+          "Cost": 100,
+          "DType": {
+            "DTypeId": 5,
+            "Title": "Страхование автомобилей"
+          }
         }
       },
       {
         "ContractId": 46,
         "DateOfConclusion": "02:08:2018",
-        "ServiceId": 3,
-        "ClientId": 8,
-        "AgentId": 10,
         "Cost": 200,
         "InsurancePeriod": 5,
         "Comment": "-",
         "Status": {
           "StatusId": 1,
           "Title": "Подтверждён"
+        },
+        "Client": {
+          "ClientId": 8,
+          "PhoneNumber": "375629872340",
+          "FullName": "Шестакова Глория Евсеевна",
+          "Adress": "Днепропетровский переулок",
+          "UserId": 3
+        },
+        "Worker": {
+          "WorkerId": 88,
+          "FullName": "Денисов Болеслав Тарасович",
+          "MinSalary": 1100,
+          "UserId": 9,
+          "DepartamentId": 3,
+          "Agent": {
+            "AgentId": 10,
+            "WorkerId": 88,
+            "PersonalData": "новичок"
+          }
+        },
+        "Service": {
+          "ServiceId": 3,
+          "Title": "Гринкарта",
+          "Cost": 300,
+          "DType": {
+            "DTypeId": 1,
+            "Title": "Личного страхования"
+          }
         }
       },
       {
         "ContractId": 42,
         "DateOfConclusion": "07:03:2003",
-        "ServiceId": 2,
-        "ClientId": 7,
-        "AgentId": 9,
         "Cost": 300,
         "InsurancePeriod": 2,
         "Comment": "-",
         "Status": {
           "StatusId": 1,
           "Title": "Подтверждён"
+        },
+        "Client": {
+          "ClientId": 7,
+          "PhoneNumber": "375296394317",
+          "FullName": "Евсеева Виктория Филатовна",
+          "Adress": "Димитрова улица",
+          "UserId": 12
+        },
+        "Worker": {
+          "WorkerId": 86,
+          "FullName": "Князев Корнелий Богданович",
+          "MinSalary": 100,
+          "UserId": 1,
+          "DepartamentId": 2,
+          "Agent": {
+            "AgentId": 9,
+            "WorkerId": 86,
+            "PersonalData": "новичок"
+          }
+        },
+        "Service": {
+          "ServiceId": 2,
+          "Title": "ОСАГО",
+          "Cost": 100,
+          "DType": {
+            "DTypeId": 5,
+            "Title": "Страхование автомобилей"
+          }
         }
       },
       {
         "ContractId": 48,
         "DateOfConclusion": "17:02:2006",
-        "ServiceId": 1,
-        "ClientId": 9,
-        "AgentId": 8,
         "Cost": 110,
         "InsurancePeriod": 1,
         "Comment": "-",
         "Status": {
           "StatusId": 2,
           "Title": "В обработке"
+        },
+        "Client": {
+          "ClientId": 9,
+          "PhoneNumber": "375292073833",
+          "FullName": "Савельева Илона Георгиевна",
+          "Adress": "Докутович улица",
+          "UserId": 5
+        },
+        "Worker": {
+          "WorkerId": 83,
+          "FullName": "Артемьев Вольдемар Федотович",
+          "MinSalary": 100,
+          "UserId": 14,
+          "DepartamentId": 1,
+          "Agent": {
+            "AgentId": 8,
+            "WorkerId": 83,
+            "PersonalData": "новичок"
+          }
+        },
+        "Service": {
+          "ServiceId": 1,
+          "Title": "Ипотечное страхование",
+          "Cost": 299,
+          "DType": {
+            "DTypeId": 4,
+            "Title": "Страхование ответственности"
+          }
         }
       },
       {
         "ContractId": 62,
         "DateOfConclusion": "28:06:2005",
-        "ServiceId": 14,
-        "ClientId": 5,
-        "AgentId": 5,
         "Cost": 1684,
         "InsurancePeriod": 2,
         "Comment": "-",
         "Status": {
           "StatusId": 1,
           "Title": "Подтверждён"
+        },
+        "Client": {
+          "ClientId": 5,
+          "PhoneNumber": "375295235085",
+          "FullName": "Куликов Агафон Николаевич",
+          "Adress": "Джураева улица",
+          "UserId": 20
+        },
+        "Worker": {
+          "WorkerId": 84,
+          "FullName": "Фёдоров Артем Якунович",
+          "MinSalary": 200,
+          "UserId": 6,
+          "DepartamentId": 1,
+          "Agent": {
+            "AgentId": 5,
+            "WorkerId": 84,
+            "PersonalData": "мастер"
+          }
+        },
+        "Service": {
+          "ServiceId": 14,
+          "Title": "Путешествия",
+          "Cost": 842,
+          "DType": {
+            "DTypeId": 1,
+            "Title": "Личного страхования"
+          }
         }
       },
       {
         "ContractId": 63,
         "DateOfConclusion": "01:08:2018",
-        "ServiceId": 3,
-        "ClientId": 5,
-        "AgentId": 5,
         "Cost": 900,
         "InsurancePeriod": 3,
         "Comment": "213214",
         "Status": {
           "StatusId": 1,
           "Title": "Подтверждён"
+        },
+        "Client": {
+          "ClientId": 5,
+          "PhoneNumber": "375295235085",
+          "FullName": "Куликов Агафон Николаевич",
+          "Adress": "Джураева улица",
+          "UserId": 20
+        },
+        "Worker": {
+          "WorkerId": 84,
+          "FullName": "Фёдоров Артем Якунович",
+          "MinSalary": 200,
+          "UserId": 6,
+          "DepartamentId": 1,
+          "Agent": {
+            "AgentId": 5,
+            "WorkerId": 84,
+            "PersonalData": "мастер"
+          }
+        },
+        "Service": {
+          "ServiceId": 3,
+          "Title": "Гринкарта",
+          "Cost": 300,
+          "DType": {
+            "DTypeId": 1,
+            "Title": "Личного страхования"
+          }
         }
       }
     ]
