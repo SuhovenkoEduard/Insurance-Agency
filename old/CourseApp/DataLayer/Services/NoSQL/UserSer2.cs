@@ -11,10 +11,7 @@ namespace CourseApp.DataLayer.Services.NoSQL
         public UserSer2(IAdapter adapter)
             : base(adapter) { }
 
-        public override bool Contains(Classes.User user)
-        {
-            return adapter.GetAll<Classes.User>().Any(x => x.Login == user.Login && x.Password == user.Password);
-        }
+        public override bool Contains(Classes.User user) => adapter.GetAll<Classes.NoSQL.User>().Any(x => x.Login == user.Login && x.Password == user.Password);
         public override bool ContainsLogin(string login)
         {
             return adapter.GetAll<Classes.NoSQL.User>().Any(x => x.Login == login);

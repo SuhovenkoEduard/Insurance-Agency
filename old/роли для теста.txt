@@ -1,3 +1,5 @@
 20 web qwerty ____ Client
-1 manager 123456 ____ Agent
+1 local princess ____ Agent
 4 tech password ____ Manager
+
+Минкс -> Личное страхование -> Фёдор Артём Янукович

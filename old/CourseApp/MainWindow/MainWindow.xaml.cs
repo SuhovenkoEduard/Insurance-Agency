@@ -35,16 +35,16 @@ namespace CourseApp
             var signInWindow = new SignInWindow(dataLayer);
             signInWindow.Show();
 
-            //User userClient = new User("web", "qwerty");
-            //signInWindow.SignIn(userClient);
+            User userClient = new User("web", "qwerty");
+            signInWindow.SignIn(userClient);
 
-            //User userAgent = new User("local", "princess");
-            //signInWindow.SignIn(userAgent);
+            User userAgent = new User("local", "princess");
+            signInWindow.SignIn(userAgent);
 
             //User userManager = new User("admin", "admin");
             //signInWindow.SignIn(userManager);
 
-            //signInWindow.Close();
+            signInWindow.Close();
             this.Close();
         }
 

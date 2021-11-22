@@ -55,7 +55,7 @@ namespace CourseApp.AuthorizeWindows.Register
                 Client client = new Client(registerInfo.Number, registerInfo.ClientName, registerInfo.Adress, CodeOfUser);
                 dataLayer.Clients.Add(client);
 
-                var clientWindow = new ClientWindow(dataLayer.Clients.GetClientByUserId(user.UserId), dataLayer);
+                var clientWindow = new ClientWindow(dataLayer.Clients.GetClientByUserId(CodeOfUser), dataLayer);
                 clientWindow.Show();
                 this.Close();
             }

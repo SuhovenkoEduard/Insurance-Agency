@@ -38,6 +38,7 @@ namespace CourseApp.DataLayer.Services.NoSQL
         public override void Add(Client client)
         {
             var user = users.GetUserById(client.UserId);
+            client.ClientId = users.GetClients().Max(c => c.ClientId) + 1;
             user.Client = client;
             adapter.Update(user);
         }
