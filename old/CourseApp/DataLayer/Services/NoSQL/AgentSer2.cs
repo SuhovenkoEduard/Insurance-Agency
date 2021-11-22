@@ -71,16 +71,13 @@ namespace CourseApp.DataLayer.Services.NoSQL
 
                 where agent.AgentId == agentId
 
-                select new
-                {
-                    agent.AgentId,
-                    worker.FullName,
-                    worker.MinSalary,
-                    Departament = dType.Title,
-                    FilialCity = filial.City
-                };
-
-            return result.First().ToString();
+                select
+                    "Айди агента: " + agent.AgentId + "\n" +
+                    "ФИО работника: " + worker.FullName + "\n" +
+                    "Зарплата: " + worker.MinSalary + " $\n" +
+                    "Отдел: " + dType.Title + "\n" +
+                    "Город: " + filial.City + "\n";
+            return result.First();
         }
         public override bool ContainsWorkerId(int workerId) => users.GetAgents().Any(x => x.WorkerId == workerId);
         public override int GetSalary(int agentId)

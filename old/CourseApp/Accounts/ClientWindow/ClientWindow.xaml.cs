@@ -42,6 +42,9 @@ namespace CourseApp.Accounts.ClientWindow
         private void ShowTypesOfInsurance(object sender, RoutedEventArgs e)
         {
             DataGrid.ItemsSource = dataLayer.Services.GetServices();
+            string[] headers = new string[] { "Айди услуги", "Название услуги", "Айди типа отдела", "Цена" };
+            for (int i = 0; i < headers.Length; ++i) 
+                DataGrid.Columns[i].Header = headers[i];
         }
 
         private void ConcludeContract(object sender, RoutedEventArgs e)
@@ -53,6 +56,9 @@ namespace CourseApp.Accounts.ClientWindow
         private void CurrentContracts(object sender, RoutedEventArgs e)
         {
             DataGrid.ItemsSource = dataLayer.Contracts.GetFullInfoByClientId(client.ClientId);
+            string[] headers = new string[] { "Айди", "Дата", "Название услуги", "ФИО агента", "Итоговая Цена", "Срок действия", "Комментарий", "Статус" };
+            for (int i = 0; i < headers.Length; ++i)
+                DataGrid.Columns[i].Header = headers[i];
         }
 
         private void TerminateContract(object sender, RoutedEventArgs e)

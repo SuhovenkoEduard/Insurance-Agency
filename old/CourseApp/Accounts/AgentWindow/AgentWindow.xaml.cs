@@ -39,20 +39,29 @@ namespace CourseApp.Accounts.AgentWindow
         {
             HideSaveButton();
             DataGrid.ItemsSource = dataLayer.Services.GetServicesByAgentId(agent.AgentId);
+            string[] headers = new string[] { "Айди услуги", "Название услуги", "Айди типа отдела", "Цена" };
+            for (int i = 0; i < headers.Length; ++i)
+                DataGrid.Columns[i].Header = headers[i];
         }
         // 2
         private void ContractsInProcessing(object sender, RoutedEventArgs e)
         {
             ShowSaveButton();
             DataGrid.ItemsSource = dataLayer.Contracts.GetContractsInProcessingByAgentId(agent.AgentId);
+            string[] headers = new string[] { "Айди", "Дата", "Айди услуги", "Айди клиента", "Айди агента", "Цена", "Период действия", "Комментарий", "Статус" };
             for (int i = 0; i < DataGrid.Columns.Count - 1; ++i)
                 DataGrid.Columns[i].IsReadOnly = true;
+            for (int i = 0; i < headers.Length; ++i)
+                DataGrid.Columns[i].Header = headers[i];
         }
         // 3
         private void ConfirmedContracts(object sender, RoutedEventArgs e)
         {
             HideSaveButton();
             DataGrid.ItemsSource = dataLayer.Contracts.GetConfirmedContractsByAgentId(agent.AgentId);
+            string[] headers = new string[] { "Айди", "Дата", "Айди услуги", "Айди клиента", "Айди агента", "Цена", "Период действия", "Комментарий", "Статус" };
+            for (int i = 0; i < headers.Length; ++i)
+                DataGrid.Columns[i].Header = headers[i];
         }
         // 4
         private void SalaryForTheLastYear(object sender, RoutedEventArgs e)

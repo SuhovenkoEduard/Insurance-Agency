@@ -22,10 +22,17 @@
         </Grid.RowDefinitions>
 
         <Grid Grid.ColumnSpan="2">
-            <TextBlock Text="Клиент" FontSize="30" HorizontalAlignment="Center" FontWeight="Bold" Margin="0 0 0 20"/>
-
+            <TextBlock Text="Клиент" 
+                       FontSize="30" 
+                       HorizontalAlignment="Center" 
+                       FontWeight="Bold" 
+                       Margin="0 0 0 20"
+                       Foreground="White"/>
+            
             <TextBlock x:Name="ClientInfoString" 
-                       FontSize="20" 
+                       FontSize="12" 
+                       Foreground="White"
+                       Padding="10"
                        HorizontalAlignment="Center" 
                        Margin="0 40 0 0"
                        Text="ClientInfo"/>

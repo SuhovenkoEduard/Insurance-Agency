@@ -97,16 +97,13 @@ namespace CourseApp.DataLayer.Services.NoSQL
 
                 where manager.ManagerId == managerId
 
-                select new
-                {
-                    manager.ManagerId,
-                    worker.FullName,
-                    worker.MinSalary,
-                    Departament = dType.Title,
-                    FilialCity = filial.City
-                };
-
-            return result.First().ToString();
+                select
+                    "Айди менеджера: " + manager.ManagerId + "\n" +
+                    "ФИО:" + worker.FullName + "\n" +
+                    "Зарплата: " + worker.MinSalary + "\n" +
+                    "Отдел: " + dType.Title + "\n" +
+                    "Город: " + filial.City;
+            return result.First();
         }
         public override bool ContainsWorkerId(int workerId) => users.GetManagers().Any(x => x.WorkerId == workerId);
     }

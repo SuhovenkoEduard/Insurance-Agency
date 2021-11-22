@@ -25,7 +25,8 @@
             <TextBlock Text="Менеджер" FontSize="30" HorizontalAlignment="Center" FontWeight="Bold" Margin="0 0 0 20" Foreground="White"/>
 
             <TextBlock x:Name="ManagerInfoString" 
-                       FontSize="20" 
+                       FontSize="12"
+                       Padding="10"
                        HorizontalAlignment="Center" 
                        Margin="0 40 0 0"
                        Text="ManagerInfo"

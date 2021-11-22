@@ -24,15 +24,13 @@ namespace CourseApp.DataLayer.Services.NoSQL
             var result =
                 from client in clients
                 where client.ClientId == clientId
-                select new
-                {
-                    client.ClientId,
-                    client.FullName,
-                    client.PhoneNumber,
-                    client.Adress
-                };
+                select 
+                    "Айди клиента: " + client.ClientId + "\n" +
+                    "ФИО: " + client.FullName + "\n" +
+                    "Телефонный номер: " + client.PhoneNumber + "\n" +
+                    "Адрес: " + client.Adress + "\n";
 
-            return result.First().ToString();
+            return result.First();
         }
         public override Client GetClientByUserId(int userId) => users.GetUserById(userId).Client;
         public override void Add(Client client)

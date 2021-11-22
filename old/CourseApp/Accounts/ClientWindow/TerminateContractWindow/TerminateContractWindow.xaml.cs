@@ -30,9 +30,16 @@ namespace CourseApp.Accounts.ClientWindow.TerminateContractWindow
             this.client = client;
 
             this.dataLayer = dataLayer;
-            TerminateContractsDataGrid.ItemsSource = dataLayer.Contracts.GetFullInfoByClientId(client.ClientId);
         }
-        
+
+        public void WindowLoaded(object sender, RoutedEventArgs e)
+        {
+            TerminateContractsDataGrid.ItemsSource = dataLayer.Contracts.GetFullInfoByClientId(client.ClientId);
+            string[] headers = new string[] { "Айди", "Дата", "Название услуги", "ФИО агента", "Итоговая Цена", "Срок действия", "Комментарий", "Статус" };
+            for (int i = 0; i < headers.Length; ++i)
+                TerminateContractsDataGrid.Columns[i].Header = headers[i];
+        }
+
         private void EnterContract(object sender, EventArgs e)
         {
             ContractIdComboBox.ItemsSource = dataLayer.Contracts.GetContractIdByClientId(client.ClientId);
